@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<marquee>滚来滚去</marquee>
+		<button id="btn">
+			加载人员信息
+		</button>
+	</body>
+	<script>
+		var oBtn = document.getElementById("btn");
+		oBtn.onclick = function(){
+					//创建对象:
+				var xhr = new XMLHttpRequest();
+					//准备信息:
+				xhr.open("GET","http://localhost:8080/ajax/person",true);
+				//发送：
+					xhr.send(); 
+				//获取数据
+				xhr.onreadystatechange = function(){
+				
+				if(xhr.status==200&&xhr.readyState==4){
+					var str = xhr.responseText;
+				var obj = JSON.parse(str);
+					var oTable = document.createElement("table");
+						var arr = obj.data;
+						for (var i = 0; i < arr.length; i++) {
+							var oTr= document.createElement("tr");
+							var o = arr[i];
+							for(var j in o){
+								
+								var oTd =document.createElement("td");
+								oTd.innerHTML =o[j]; 
+								oTr.appendChild(oTd);
+							}
+							oTable.appendChild(oTr);
+						}
+						document.body.appendChild(oTable);
+					
+					
+				}
+					
+					
+					
+					
+					
+				}
+				
+	}
+		
+	</script>
+</html>

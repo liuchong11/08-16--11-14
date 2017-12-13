@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+用户<input id="user" type="text">
+
+<script>
+    var user =document.getElementById("user");
+    user.onfocus =function(){
+        this.style.backgroundColor="red";
+    }
+    user.onblur = function(){
+        this.style.backgroundColor="green";
+    }
+</script>
+
+</body>
+</html>

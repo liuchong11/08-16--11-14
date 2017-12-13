@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  身高：<input type="text" id="num1">
+	本身体重：<input type="text" id="num2">
+  <input type="button" value="判断" onclick="aaa()"> 
+ </body>
+ <script>
+	function aaa(){
+		var a = num1.value;
+		var b = num2.value;
+		var c = (a-108)*2
+		var d =c-b;
+		
+		if(d>-5&&d<5){
+		
+		document.write("合适")
+			
+		}else if(d>10||d<-10){
+		
+		document.write("不合适")
+		
+		
+		}
+	
+	
+	
+	
+	}
+ 
+ 
+ 
+ 
+ </script>
+</html>

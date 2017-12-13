@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="ajax-5.0.js"></script>
+	<script>
+		ajax.get({
+			url:"http://localhost:8080/ajax/football",
+			data:{
+				pageNo:2,
+				pageCount:1
+				
+			},
+			success:function(str){
+				console.log(str);
+			}
+			
+			
+			
+		})
+		
+		
+		
+		
+	</script>
+</html>

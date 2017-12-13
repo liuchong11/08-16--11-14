@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <div id=box style="height:100px;width:100px;background-color:red;position:absolute;left:0px"></div>
+   <div id=box1 style="height:100px;width:100px;background-color:red;position:absolute;left:0px;top:200px"></div>
+    <div id=box2 style="height:100px;width:100px;background-color:red;position:absolute;left:0px;top:400px"></div>
+ </body>
+ <script src= "tween.js"></script>
+ <script>
+ /*
+ var a = {shengao:18,nianling:100};
+
+ for (i in a )
+ {
+
+ }
+ 
+ 
+ var  a = 100;
+ var b =10;
+ if(a<b)
+ {
+	document.write("aaa");
+ }else{
+ document.write("bbb");
+ 
+ }
+
+
+ for(var a = -50;a<=50;a++)
+ {
+ document.write(a+" ")
+ }
+ 
+  var array=[1,2,3,4,5];//定义一个数组，实现数组元素的遍历。
+//用For...in实现
+for(var i in array){
+    alert(array[i]);//数组的元素
+}
+
+function max(b,c){
+
+var a = b+c;
+return a;
+}
+max(3,4);
+document.write(max(3,4));
+
+function max(a,b)
+{if(a>=b)
+	{
+	return(a)
+	}else{
+		return(b);
+		}
+}
+document.write(max(max(3,6),9))
+
+function f1(a){
+	var a = 0;
+var b=prompt();
+a+=b;
+return a;
+}
+document.write(f1(a));
+
+var a = [1,2,3,4,5,6,7,8];
+
+document.write(a.reverse());
+
+
+
+
+
+var a = [10,10.2,15,20,50];
+
+for(i=0;i<a.length-1;i++){
+     document.write(Math.min(a[i],a[i+1]));
+}
+var a = [1,2,3,4,5,67,8]
+
+
+
+
+function min(a,b,c,d,e)
+{
+
+}
+*/
+var Obox = document.getElementById("box")
+var Obox1 = document.getElementById("box1")
+var Obox2 = document.getElementById("box2")
+var n = 1;
+var timer = setInterval(function(){
+	Obox.style.left=Tween. SineEaseOut(n,0,500,100)+"px";
+	Obox1.style.left=Tween.  ExpoEaseIn(n,0,900,100)+"px";
+	Obox2.style.left=Tween. ExpoEaseInOut(n,0,1000,100)+"px";
+	if(n==100)
+	{
+	clearInterval(timer);
+	}
+n++;
+
+},50);
+ </script>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<style>
+			*{
+				margin:0;
+				padding: 0;
+			}
+			div{
+				width: 60%;
+				height: 100px;
+				background: pink;
+				margin: 0 auto;
+			}
+			p{
+				float: left;
+				width: calc(50% - 2px);
+				height: 100px;
+				border: 1px solid black;
+				background-image: -webkit-radial-gradient(left,gold,white);
+			}
+			/*p:last-child{
+				border-left: none;
+			}*/
+		</style>
+	</head>
+	<body>
+		<h3>制作两个50%的盒子不会掉下去</h3>
+		<div>
+			<p>1</p>
+			<p>2</p>
+		</div>
+	</body>
+</html>

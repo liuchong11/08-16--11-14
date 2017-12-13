@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" id="num1">
+  <input type="button" value="提交" onclick="aaa()">
+ </body>
+ <script>
+/* var a = /\d/;
+ var str="a,d,f,g,h,d,s,ssd,f,f,f,g,r,w,2,w";
+ document.write(a.test(str));
+ 
+
+ var a =/\d{5}/
+
+
+ document.write(a.test("a122s345"));
+ 
+
+function aaa(){
+var a = num1.value;
+var b =/^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/;
+
+var y = b.test(a);
+	if(y)
+	{document.write("正确")
+	}else{
+		document.write("错误");
+	
+	}
+}
+*/
+
+function aaa(){
+	var a=num1.value;
+	var b =/^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/;
+	var y = b.test(a);
+
+	if(y){
+	document.write("正确");
+	}else{
+		document.write("错误");
+	}
+
+
+
+
+
+}
+ </script>
+</html>

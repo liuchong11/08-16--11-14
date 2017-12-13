@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" id="num1">
+  <input type="text" id="num2">
+  <input type="button" value="检测" onclick="aaa()">
+ </body>
+ <script>
+
+
+ 
+ function aaa(){
+	var b=Number(num1.value);
+	 var c=Number(num2.value);
+		var i =	Number(b/(c*c));
+ if(i>32){document.write("非常胖")
+ }else if(i>28&&i<31.999999){document.write("胖")
+ }else if(i>25&&i<27.999999){document.write("过重")
+ }else if(i>18&&i<24.999999){document.write("正常")
+ }else if(i<18.5){document.write("过轻")}
+ }
+ 
+ 
+ 
+ 
+ 
+ </script>
+</html>

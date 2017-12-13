@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <metaxt name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  #box ul{
+  list-style:none;
+  }
+  #box ul li{
+  float:left;
+
+  }
+ #box ul li img{
+ width:400px;
+ height:400px;
+     margin-left: -40px;
+	 margin-top:-16px;
+ 
+ }
+  
+  
+  
+  </style>
+ </head>
+ <body>
+  <div id="box"style="width:400px;height:400px;background-color:red;margin:0 auto;position:relative;overflow:hidden">
+	  <div id="box1" style="width:1200px;margin:0 auto;position:absolute;top:0px;left:0px">
+		  <ul>
+			  <li><img src="img/1.jpg"></li>
+			  <li><img src="img/2.jpg"></li>
+			  <li><img src="img/3.jpg"></li>
+		  </ul>
+	  
+	  
+	  
+	  </div>
+  </div>
+ </body>
+ <script>
+window.onload = function() {
+
+	// 得到物体 
+	var oDiv = document.getElementById("box1")
+
+
+
+
+
+
+	// 得到所有 li 物体
+	var aLi = oDiv.getElementsByTagName("li")
+
+	// oDiv.offsetWidth 代表 oDiv物体的 宽度值(width+padding+border)
+	console.log( aLi[0].offsetWidth )
+	//  maxLeft 最大的left值
+	var maxLeft = 0;
+	for (var i = 0; i < aLi.length; i++) {
+		maxLeft += aLi[i].offsetWidth;
+	//	maxLeft += 10; // 加外边距
+	}
+	console.log("maxLeft: " + maxLeft)
+
+	
+	// 再复制1份
+	var oUl = oDiv.getElementsByTagName("ul")[0];
+	oUl.innerHTML += oUl.innerHTML
+
+
+	// 创建定时器
+	
+
+
+		oDiv.onmouseover=function(){
+		clearInterval(t);
+	
+	}
+	oDiv.onmouseout=function(){
+	 t=setInterval(move, 50)
+	}
+
+	// 保存位置
+	var x = 0; 
+
+	// 定义1个函数 move
+	function move() {
+		// 1. 更新位置
+		oDiv.style.left = x + "px";
+
+		// 2. 修改x的值
+		x += -10;
+
+		if (x<-maxLeft) {
+			x =0;
+		}
+	}
+}
+
+ </script>
+</html>

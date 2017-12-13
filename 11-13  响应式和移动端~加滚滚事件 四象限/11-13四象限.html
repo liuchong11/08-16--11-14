@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				height: 100%;
+				overflow: hidden;
+				background: purple;
+			}
+			.box{
+				height: 100%;
+				position: relative;
+			}
+			.page{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+			}
+			.no1{
+				top: 0;
+				left: 0;
+				background: yellowgreen;
+			}
+			.no2{
+				top: 0;
+				left: 110%;
+				background: blue;
+			}
+			.no3{
+				top:120%;
+				left: 0%;
+				background:hotpink;
+			}
+			.no4{
+				top: 120%;
+				left:110%;
+				background: navy;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div>
+				<div class="page no1">
+					<input type="button" value="点我no1" id="btn1"/>
+				</div>
+				<div class="page no2">
+					<input type="button" value="点我no2" id="btn2"/>
+				</div>
+				<div class="page no3"><input type="button" value="点我no3" id="btn3"/></div>
+				<div class="page no4">
+					<input type="button" value="点我no4" id="btn4"/>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../10-24/js/jquery-3.2.1.js"></script>
+		<script src="js/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+		var box  = $(".box");
+			$("#btn1").click(function(){
+				box.animate({"left":"-110%", "top":"0"},4000);
+			});
+			$("#btn2").click(function(){
+				box.animate({"left":"0","top":"-120%"},4000);
+			})
+			$("#btn3").click(function(){
+				box.animate({"left":"-110%","top":"-120%"},4000);
+			})
+		</script>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+
+ </body>
+ <script>
+ var a = {};
+
+	a.name = "我的天";
+var k = "name";
+
+
+
+console.log(a["name"]);
+//	a[k]  代表 访问 a对象中  变量k所代表的 属性
+//								name
+/*
+a["name"]代表     访问 a 对象中   变量name所代表的    属性
+a[name] 代表   
+
+
+
+*/
+ </script>
+</html>

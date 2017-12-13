@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding:0;
+            margin: 0;
+            list-style: none;
+        }
+        .concerts{
+         width: 1366px;
+         height: 590px;
+         /*background: black;*/
+         margin: 0 auto;
+         position: relative;
+     }
+        .concerts img{
+            width: 1366px;
+            height: 590px;
+            /*background: black;*/
+            margin: 0 auto;
+        }
+        /*first*/
+        .heads{
+            width: 1366px;
+            height: 80px;
+            /*background: rgba(0,0,0,0.8);*/
+            position: absolute;
+            top: 0px;
+        }
+        .head{
+            width: 260px;
+            height: 40px;
+            background: url("img3/logo2.png") 0px 0px no-repeat;
+            float: left;
+            margin-left: 70px;
+            margin-top: 17px;
+        }
+        .logos{
+            width: 192px;
+            height: 40px;
+            /*background: rgba(0,255,0,0.2);*/
+            float: right;
+            margin-right: 60px;
+            margin-top: 17px;
+        }
+        .logo2{
+            width: 70px;
+            height: 40px;
+            /*background: rgba(0,0,255,0.2);*/
+            float: left;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        .fenxiangs{
+            width: 120px;
+            height: 38px;
+            border: 1px solid white;
+            border-radius: 20px;
+            float: right;
+            text-align: center;
+            line-height: 40px;
+            color: white;
+            cursor: pointer;
+        }
+        /*second*/
+        .recruit{
+            width: 512px;
+            height: 164px;
+            background: url("img3/recruit_v2.png");
+            position: absolute;
+            top: 160px;
+            left: 430px;
+            animation: move1 .6s ease-out;
+        }
+        @-webkit-keyframes move1{
+            0%{
+                opacity: 0;
+                transform: translatey(30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translatey(0);
+            }
+        }
+        /*third*/
+        .system{
+            width: 1366px;
+            height: 90px;
+            /*background-color: #0CEA87;*/
+            text-align: center;
+            line-height: 30px;
+            position: absolute;
+            top: 350px;
+            color: white;
+            animation: move1 .6s ease-out;
+            animation-delay: .2s;
+        }
+        @-webkit-keyframes move1{
+            0%{
+                opacity: 0;
+                transform: translatey(30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translatey(0);
+            }
+        }
+        .system1{
+            margin-top: 15px;
+        }
+        .system1 span{
+            text-decoration: line-through;
+        }
+        .system2{
+            width: 512px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .system3{
+            float: left;
+        }
+        .systema{
+            margin-left: 10px;
+        }
+        .systemb{
+            margin-left: 35px;
+        }
+        .systemc{
+            margin-left: 35px;
+        }
+        .systemd{
+            margin-left: 35px;
+        }
+        /*fourth*/
+        .oncelogos{
+            width: 1366px;
+            height: 60px;
+            /*background-color: #6B97F5;*/
+            margin: 0 auto;
+            position: absolute;
+            top:480px;
+        }
+        .oncelogo{
+            width: 205px;
+            height: 58px;
+            background-color: #F3D335;
+            border-radius: 30px;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 58px;
+            font-size: 25px;
+            font-weight: 500;
+            animation: move2 .6s;
+            animation-delay: .3s;
+        }
+        @-webkit-keyframes move2{
+            0%{
+                opacity: 0;
+                transform: translatey(30px);
+            }
+            100%{
+                opacity: 1;
+                transform: translatey(0);
+            }
+        }
+        .can{
+            width: 340px;
+            height: 50px;
+            /*background-color: #069052;*/
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 32px;
+        }
+        .can span{
+            text-decoration: line-through;
+            color: #CCCCCC;
+        }
+        .writers,.writers2,.writers3,.writers4{
+            width: 1120px;
+            height: 90px;
+            /*background-color: #8F9192;*/
+            margin: 0 auto;
+            margin-top: 160px;
+        }
+        .tuone,.tutwo,.tuthree,.tufour{
+            width: 40px;
+            height: 65px;
+        }
+        .tuone{
+            background: url("img3/num_1.png");
+        }
+        .autor{
+            width: 210px;
+            height: 45px;
+            margin-top:-60px;
+            margin-left:55px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 30px;
+        }
+        .autor span{
+            text-decoration: line-through;
+        }
+        .dredge{
+            width: 690px;
+            height: 30px;
+            margin-top:-15px;
+            margin-left:55px;
+            font-size: 18px;
+        }
+        .dredge2{
+            width: 690px;
+            height: 30px;
+            margin-top:0px;
+            margin-left:55px;
+            font-size: 16px;
+            color: rgba(0,0,0,.5);
+        }
+        .onceapply{
+            width: 205px;
+            height: 58px;
+            border: 2px solid black;
+            border-radius: 30px;
+            float: right;
+            margin-top: -80px;
+            text-align: center;
+            line-height: 58px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .tutwo{
+            background: url("img3/num_2.png");
+        }
+        .writers3{
+            height: 120px;
+        }
+        .tuthree{
+            background: url("img3/num_3.png");
+        }
+        .onceapply3{
+            width: 210px;
+            height: 30px;
+            float: right;
+            margin-top: -95px;
+            text-align: center;
+            line-height: 58px;
+            font-size: 25px;
+            font-weight: 500;
+        }
+        .tufour{
+            height: 64px;
+            background: url("img3/num_4.png");
+        }
+        .onceapply4{
+            margin-top: -80px;
+        }
+        .can1{
+            width: 340px;
+            height: 50px;
+            /*background-color: #069052;*/
+            margin: 0 auto;
+            margin-top: 150px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 32px;
+        }
+        .can1 span{
+            text-decoration: line-through;
+            color: #CCCCCC;
+        }
+        .signs{
+            width: 1200px;
+            height: 145px;
+            /*background-color: #0CEA87;*/
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .sign{
+            width: 150px;
+            height: 145px;
+            /*background-color: #CC5522;*/
+            float: left;
+            margin-left: 120px;
+        }
+        .signa,.signc,.signe,.signg{
+            width: 80px;
+            height: 78px;
+        }
+        .signa{
+            background: url("img3/privilege_v2.png") 0px 0px no-repeat;
+            margin-left: 38px;
+        }
+        .signc{
+            background: url("img3/privilege_v2.png") -293px 0px no-repeat;
+            margin-left: 35px;
+        }
+        .signe{
+            width: 85px;
+            background: url("img3/privilege_v2.png") -590px 0px no-repeat;
+            margin-left: 30px;
+        }
+        .signg{
+            background: url("img3/privilege_v2.png") -890px 0px no-repeat;
+            margin-left: 30px;
+        }
+        .signb,.signd,.signf,.signh{
+            width: 150px;
+            height: 40px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 500;
+            margin-top: 35px;
+        }
+        .can2{
+            width: 340px;
+            height: 50px;
+            /*background-color: #069052;*/
+            margin: 0 auto;
+            margin-top: 150px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 32px;
+        }
+        .can2 span{
+            text-decoration: line-through;
+            color: #CCCCCC;
+        }
+        .nets{
+            width: 1200px;
+            height: 180px;
+            /*background-color: #0D2C7C;*/
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+        .net{
+            width: 570px;
+            height: 180px;
+            /*background-color: #FA5C98;*/
+            float: left;
+            margin-left: 30px;
+        }
+        .net a img{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+        }
+        .luo{
+            width: 192px;
+            height: 70px;
+            /*background-color: darkcyan;*/
+            float: right;
+            margin-top: 60px;
+            margin-right: 180px;
+            line-height: 30px;
+            font-size: 13px;
+        }
+        .official{
+            text-align: center;
+        }
+        .luo strong{
+            font-weight: 500;
+            font-size: 24px;
+        }
+        .luo span{
+            font-size: 18px;
+            color: #777777;
+        }
+        .luo2{
+            width: 265px;
+            margin-right: 110px;
+        }
+        .luo4{
+            width: 324px;
+            margin-top: 60px;
+            margin-right: 50px;
+        }
+        .luo4 .official{
+           float: left;
+        }
+        .luo5{
+            width: 337px;
+            margin-top: 60px;
+            margin-right: 35px;
+        }
+        .luo7{
+            width: 220px;
+            margin-top: 60px;
+            margin-right: 150px;
+        }
+        .luo9{
+            width: 200px;
+            margin-top: 60px;
+            margin-right: 170px;
+        }
+        .luo10{
+            width: 220px;
+            margin-top: 60px;
+            margin-right: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="concerts">
+        <img src="img3/top_v2.jpg" alt="QQ音乐号招募">
+        <!--first-->
+        <div class="heads">
+            <span class="head"></span>
+            <div class="logos">
+                <p class="logo2">登录</p>
+                <div class="fenxiangs">分享</div>
+            </div>
+        </div>
+        <!--second-->
+        <div class="recruit"></div>
+        <!--third-->
+        <div class="system">
+            <p class="system1">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>音乐号是QQ音乐全新推出的自媒体认证体系，认证音乐号你可以<span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </p>
+            <div class="system2">
+                <div class="system3 systema">开通音乐专栏</div>
+                <div class="system3 systemb">创建精品歌单</div>
+                <div class="system3 systemc">申请主播电台</div>
+                <div class="system3 systemd">上传偶像视频</div>
+            </div>
+        </div>
+        <!--fourth-->
+        <div class="oncelogos">
+            <div class="oncelogo">立即登录</div>
+        </div>
+    </div>
+    <div class="can">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;你可以申请&nbsp;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <div class="writers">
+        <div class="tuone"></div>
+        <div class="autor">
+            <span>&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;专栏作者&nbsp;&nbsp;<span>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <p class="dredge">申请开通后可以发布专栏文章，欢迎乐评人、编辑、公众号作者等优质内容生产者申请</p>
+        <p class="dredge2">申请条件：有相关音乐专栏作品，能持续生产与音乐相关的文字作品</p>
+        <div class="onceapply">立即申请</div>
+    </div>
+    <div class="writers2">
+        <div class="tutwo"></div>
+        <div class="autor">
+            <span>&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;专栏作者&nbsp;&nbsp;<span>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <p class="dredge">申请开通后可以上传电台节目和创建直播，欢迎电台DJ、主持人、音乐人等申请</p>
+        <p class="dredge2">申请条件：通过实名审核/通过主播试音考核</p>
+        <div class="onceapply">立即申请</div>
+    </div>
+    <div class="writers3">
+        <div class="tuthree"></div>
+        <div class="autor">
+            <span>&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;专栏作者&nbsp;&nbsp;<span>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <p class="dredge">认证后歌单优先被审核，将获音乐馆首页/歌单广场推荐，欢迎优质歌单创建者申请</p>
+        <p class="dredge2">歌单达人条件：优质歌单数≥10 </p>
+        <p class="dredge2">歌单专家条件：达到优质歌单数量和收藏量&nbsp;&nbsp;&nbsp;&nbsp;详细> </p>
+        <div class="onceapply3">达到条件自动认证</div>
+    </div>
+    <div class="writers4">
+        <div class="tufour"></div>
+        <div class="autor">
+            <span>&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;专栏作者&nbsp;&nbsp;<span>&nbsp;&nbsp;&nbsp;</span>
+        </div>
+        <p class="dredge">认证后视频优先被审核，将获视频MV频道推荐，欢迎官方粉丝团、视频UP主申请</p>
+        <p class="dredge2">认证条件：优质视频数≥50</p>
+        <div class="onceapply3 onceapply4">达到条件自动认证</div>
+    </div>
+    <div class="can1">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;你可以获得&nbsp;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <div class="signs">
+        <div class="sign sign1">
+           <div class="signa"></div>
+            <p class="signb">专属认证标识</p>
+        </div>
+        <div class="sign sign2">
+            <div class="signc"></div>
+            <p class="signd">上亿流量曝光</p>
+        </div>
+        <div class="sign sign3">
+            <div class="signe"></div>
+            <p class="signf">万千粉丝呼应</p>
+        </div>
+        <div class="sign sign4">
+            <div class="signg"></div>
+            <p class="signh">主播收入分成</p>
+        </div>
+    </div>
+    <div class="can2">
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&nbsp;他们已经来了&nbsp;<span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    </div>
+    <ul class="nets">
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/103036.jpg" alt="落网">
+            </a>
+            <div class="luo">
+                <strong>落网</strong>
+                <span>已认证</span>
+                <div class="official">落网官方账号、QQ音乐专栏作者</div>
+            </div>
+        </li>
+        <li class="net net2">
+            <a href="#">
+                <img src="img3/103031.jpg" alt="billbroad">
+            </a>
+            <div class="luo luo2">
+                <strong>Billboard中国</strong>
+                <span>已认证</span>
+                <div class="official">Billboard中国官方账号、QQ音乐专栏作者</div>
+            </div>
+        </li>
+    </ul>
+    <ul class="nets">
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/g.jpg" alt="果酱音乐">
+            </a>
+            <div class="luo luo3">
+                <strong>果酱音乐</strong>
+                <span>已认证</span>
+                <div class="official">著名音乐媒体、QQ音乐专栏作者</div>
+            </div>
+        </li>
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/103137.jpg" alt="国家大剧院古典音乐频道">
+            </a>
+            <div class="luo luo4">
+                <strong>国家大剧院古典音乐频道</strong>
+                <span>已认证</span>
+                <div class="official">国家大剧院古典音乐频道官方账号</div>
+            </div>
+        </li>
+    </ul>
+    <ul class="nets">
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/g1.jpg" alt="metro">
+            </a>
+            <div class="luo luo5">
+                <strong>Metro Radio</strong>
+                <span>已认证</span>
+                <div class="official">国际都市频率FM94.5 欧美音乐专业户、QQ音乐专栏作者</div>
+            </div>
+        </li>
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/109270.jpg" alt="民谣历">
+            </a>
+            <div class="luo luo6">
+                <strong>民谣历</strong>
+                <span>已认证</span>
+                <div class="official">著名音乐媒体、QQ音乐专栏作者</div>
+            </div>
+        </li>
+    </ul>
+    <ul class="nets">
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/103033.jpg" alt="淘漉音乐">
+            </a>
+            <div class="luo luo7">
+                <strong>淘漉音乐</strong>
+                <span>已认证</span>
+                <div class="official">淘漉音乐官方账号、QQ音乐专栏作者</div>
+            </div>
+        </li>
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/103034.jpg" alt="着调">
+            </a>
+            <div class="luo luo8">
+                <strong>着调</strong>
+                <span>已认证</span>
+                <div class="official">著名音乐媒体、QQ音乐专栏作者</div>
+            </div>
+        </li>
+    </ul>
+    <ul class="nets">
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/g2.jpg" alt="看见音乐">
+            </a>
+            <div class="luo luo9">
+                <strong>看见音乐</strong>
+                <span>已认证</span>
+                <div class="official">看见音乐官方账号、著名音乐机构</div>
+            </div>
+        </li>
+        <li class="net net1">
+            <a href="#">
+                <img src="img3/65132.png" alt="乐童音乐">
+            </a>
+            <div class="luo luo10">
+                <strong>乐童音乐</strong>
+                <span>已认证</span>
+                <div class="official">乐童音乐官方账号、QQ音乐专栏作者</div>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>

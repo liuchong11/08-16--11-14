@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<video src="img/trailer.mp4" autoplay controls="true" width="1000px" id="video"></video>
+		<button id="btn1">暂停</button>
+		<button id="btn2">播放</button>
+	</body>
+	<script>
+	var oVo = document.getElementById("video");
+	var oBtn = document.getElementById("btn1");
+	var oBtn2 = document.getElementById("btn2");
+	
+	oBtn.onclick = function(){
+		oVo.pause();
+	}
+	oBtn2.onclick = function(){
+		oVo.play();
+	}
+		
+	</script>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		.wutai{
+			width: 300px;
+			height: 300px;
+			perspective: 500px;
+			margin:300px;
+		}
+			.zheng{
+				width: 258px;
+				height: 258px;
+				/*border: 1px solid black;*/
+				position: relative;
+			}
+			img{
+				position: absolute;
+			}
+			.zheng img.bady{
+				transform: rotateX(90deg) translateZ(129px);
+			}
+			.zheng img.xiaoming{
+				z-index: 2;
+				transform:translateZ(129px);
+				
+			}
+			.zheng{
+				transform-style: preserve-3d;
+				transform: rotateX(0deg);
+				transition: all 4s ease 0.1s;
+			}
+			.wutai:hover .zheng{
+				transform: rotateX(-90deg);
+			} 
+		</style>
+	</head>
+	<body>
+		<div class="wutai">
+	<div class="zheng">
+		<img src="img/baby.png"  class="bady"/>
+		<img src="img/xiaoming.png" class="xiaoming" />
+	</div>
+	</div>
+	</body>
+</html>

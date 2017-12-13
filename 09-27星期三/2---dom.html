@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  *{
+	padding:0;
+	margin:0;
+  }
+  #div1{
+		width:100px;
+		height:100px;
+		background-color:red;
+		 position: absolute; 
+	}
+  
+  
+  
+  
+  
+  
+  
+  </style>
+ </head>
+ <body>
+  <div id="div1"></div>
+ </body>
+
+ <script>
+ var oDiv = document.getElementById("div1");
+ 
+ 
+ 
+ var x = 10;
+ var sudu = 10;
+ 
+ setInterval(aaa,100)
+ 
+ function aaa(){
+ 		
+ 	oDiv.style.left=x+"px";
+ 	
+ 	x=x+sudu;
+ if(x>=600)
+ {
+ 	sudu=-sudu;
+ 	
+ }else if(x<0)
+ {
+ 
+	sudu=10;
+ 
+ }
+ 
+ }
+ 
+// sudu=(x>=600)?-sudu:sudu;
+// 格式  表达式1？表达式2：表达式3 
+// 功能： 如果表达式1的值为true;那么执行表达式2
+// 否则，那么整体的值是 表达式3的值
+ </script>
+</html>

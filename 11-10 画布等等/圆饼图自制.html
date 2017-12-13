@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#canvas{
+				border: 1px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id ="canvas" width="800" height="800"></canvas>
+	</body>
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillStyle = "#008000";
+		ctx.strokeStyle="#003EFF";
+		ctx.beginPath();
+		ctx.moveTo(100,100);
+		
+		function draw(current){
+			
+			ctx.arc(100,100,80,-0.5*Math.PI,current*(2*Math.PI)-Math.PI/2,false)
+			ctx.closePath();
+			ctx.fill();
+		}
+		var num = 0; 
+		var timer = null;
+		function loadCanvas(t){
+			timer=setInterval(function(){
+				if(num>t){
+					draw(t);
+				clearInterval(timer);
+				}else{
+					draw(num);
+					num+=0.005;
+				}
+			},5)
+		}
+		
+		loadCanvas(1);
+	</script>
+</html>

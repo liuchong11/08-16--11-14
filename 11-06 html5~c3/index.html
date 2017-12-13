@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<figure>
+			<img src="img/1.jpg"/>
+			<figcapion>机关枪</figcaapion>
+		</figure>
+		
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+	<script>
+		var url = "http://localhost:8080/ajax/pbl";
+		$.get(url,function(str){
+			var obj = JSON.parse(str);
+			var arr = obj.data;
+			var h = "";
+			
+		for(var i = 0;i<arr.length;i++){
+			h+="<figure>";
+			h+='<img src="'
+			h+=arr[i].src;
+			h+='"/>';
+			h+="<figcapion>"
+			h+=arr[i].alt;
+			h+="<figcapion/>"
+			h+="</figure>"
+		}
+		$("body").html(h);
+		
+		})
+	
+		
+		
+		
+		
+		
+	</script>
+</html>

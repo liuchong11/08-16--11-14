@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="btn">开始比赛</button>
+		<table>
+		<tr>
+		<td>姓名</td>	
+		<td>内容</td>	
+		</tr>
+		<tbody id="tb"></tbody>
+		</table>
+	</body>
+	<script src="js/ajax-5.0.js"></script>
+	<script src="http://www.css88.com/doc/underscore1.8.2/underscore-min.js"></script>
+
+	<script>
+	var oTb = document.getElementById("tb");
+	var oBn	= document.getElementById("btn");
+	var j = 0;
+	oBn.onclick = function(){
+	j++;	
+		
+		ajax.get({
+			url:"http://localhost:8080/ajax/football",
+			success:function(str){
+				var obj=JSON.parse(str);
+				var arr = obj.data;
+				var str = "<tr><td><%=name%></td><td><%=content%></td></tr>"
+				var f = _.template(str);
+						
+						var html = "";
+						
+						for (var i = 0; i < arr.length; i++) {
+							
+							console.log(arr.length);
+							html+=f(arr[j]);
+							
+						}
+						
+						oTb.innerHTML=html;
+			}
+		})
+		
+	}
+	
+		
+		
+		
+	</script>
+</html>

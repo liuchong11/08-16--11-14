@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	background: blue;
+}
+.biaoti{
+	width: 251px;
+	height: 186px;
+	background: red;
+	background: url(../img/logo.png) no-repeat;
+	background-position-y: 50px;
+	padding-top: 50px;
+	margin: 0px auto;
+}
+.wode .text{
+	margin-top: 50px; 
+	text-align: center;
+}
+.wode .text img {
+	margin: 0 15px;
+	opacity: 0;
+	transition: all 3s;
+}

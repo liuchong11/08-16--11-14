@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			img{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="img/1.jpg"/>
+	</body>
+	<script>
+		var oImg = document.getElementsByTagName("img")[0];
+		
+		var newx = 0;
+		var newy = 0;
+		
+		var deltaX;
+		var deltaY;
+		
+		oImg.addEventListener("touchstart",function(event){
+			event.preventDefault();
+			
+			deltaX = event.touches[0].clientX-newx;
+			deltaY = event.touches[0].clientY-newy;
+			},false);
+		oImg.addEventListener("touchmove",function(event){
+			event.preventDefault();
+			
+			newx= event.touches[0].clientX-deltaX;
+			newy = event.touches[0].clientY-deltaY;
+			oImg.style.left = newx +"px";
+			oImg .style.top= newy+"px";
+			},false);
+	</script>
+</html>

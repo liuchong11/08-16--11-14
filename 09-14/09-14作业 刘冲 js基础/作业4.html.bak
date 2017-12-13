@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+
+
+ var a = 10;
+var b=1.05;
+		for(i=0;i<50;i++){
+			
+		var c=document.write("第"+(i+1)+"年"+a*Math.pow(1.05,i)+"<br/>");
+
+		
+		
+		}
+ 
+ 
+ 
+ 
+ 
+ </script>
+</html>

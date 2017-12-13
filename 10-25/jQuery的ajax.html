@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script src="../10-24/js/jquery-3.2.1.js"></script>
+	<script>
+//		$.get("http://localhost:8080/ajax/person",function(str){
+//			console.log(str);
+//		})
+
+setInterval(function(){
+var url ="http://localhost:8080/ajax/person?v="+ new Date();
+console.log(url);
+
+
+$.get(url,function(str){
+	console.log(str);
+})
+},3000) 
+	</script>
+</html>

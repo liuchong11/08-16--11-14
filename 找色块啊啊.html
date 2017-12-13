@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;
+			padding: 0;
+			}			
+			.view{
+				width: 400px;
+				height: 400px;
+				background-color: green;
+				margin: 30px auto;			
+			}
+			.top{
+				width: 200px;
+				height: 50px;
+				background-color: blueviolet;
+				margin: 30px auto;
+				font-size: 40px;
+				text-align: center;
+				font-family: "微软雅黑";
+				font-weight: 900;
+				
+				
+			}
+		</style>
+	</head>
+	<body>
+		<div class="top">找色块</div>
+		<div id="bushu">第0步</div>
+		<!--1.创建游戏界面-->
+		<script type="text/javascript">
+			var bushu = document.getElementsByClassName("bushu");
+//				游戏界面
+			var rownum = 2;
+			function gameView(){
+//				利用DOM操作动态创建div
+				var view = document.createElement("div");
+				
+//				把div添加到body里面(先加一个class名)
+				view.className = "view";
+//				把view添加到body里面
+				document.body.appendChild(view);				
+				
+				var num = rownum*rownum;
+				var x = Math.random()*num;
+					x = parseInt(x);
+				
+				console.log(x);
+					
+				for (var i=0; i<num; i++) {
+//					将小盒子放到大盒子里面
+					var cview = colorview(rownum);
+					view.appendChild(cview);
+					
+//					当i等于随机数的时候,将这个小盒子的透明度改为0.5
+					if(i==x){
+						
+						cview.style.opacity = 0.5;
+						
+						cview.onclick = function(){
+							
+							rownum++;
+						
+							bushu.innerText="第"+(rownum-2)+"步";
+							
+							document.body.removeChild(view);
+							gameView();
+							
+							}
+					}
+					else{
+					
+						cview.onclick = function(){
+							
+							rownum=2;
+							document.body.removeChild(view);
+							gameView();
+							alert("游戏结束");
+							
+							bushu.innerText = "第0步";
+						}							
+					}				
+				}								
+			}
+		
+			gameView();
+//		2.写一个创建小盒子的方法
+		
+			function colorview(){
+			
+//				算出每个小盒子的宽度
+				 	cviewwidth = (400-2*(rownum+1))/rownum;
+//				创建小盒子
+				var cview = document.createElement("div");
+					cview.style.width = cviewwidth+"px";
+					cview.style.height = cviewwidth+"px";
+					cview.style.backgroundColor = "red";
+					cview.style.margin = "2px 0 0 2px";
+					cview.style.float = "left";
+					
+				return cview;
+			}
+		</script>
+	</body>
+</html>

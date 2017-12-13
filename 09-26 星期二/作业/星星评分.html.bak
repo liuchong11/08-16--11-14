@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+
+  *{
+	padding:0;
+	margin:0;
+  }
+  #xing1{
+		width:150px;
+		height:30px;
+		background-color:red;
+		margin:0 auto;
+  }
+
+  #huangxing{
+	width:30px;
+	height:30px;
+	background-color:green;
+	float:left;
+	list-style:none;
+	background-image:url(img/1.jpg);
+  }
+
+  
+  
+  
+  
+  </style>
+ </head>
+ <body>
+  <div id="xing1">
+  <ul>
+	 <li id="huangxing"></li>
+	 <li id="huangxing"></li>
+	 <li id="huangxing"></li>
+	 <li id="huangxing"></li>
+	 <li id="huangxing"></li>
+  </ul>
+  
+  
+  
+  
+  </div>
+
+  <script>
+  var a = document.getElementsByTagName("li");
+  
+for(var i = 0; i<a.length;i++)
+ {		
+	 a[i].xxx=i;
+	a[i].onmouseover=function()
+	{		
+			for(var j = 0;j<=a.length;j++){
+		a[j].style.backgroundPsitionY=0+"px";
+		
+			}
+				for(var j = 0;j<a.length;j++){
+		
+			a[j].style.backgroundPsitionY=29+"px";
+				
+			}
+	}
+  
+  
+  
+ }
+  
+  
+  
+  
+  </script>
+ </body>
+</html>

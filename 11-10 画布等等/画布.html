@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#canvas{
+				border: 10px solid black;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="800"></canvas>
+	</body>
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		var image = new Image();
+		image.src="img/6.jpg";
+		image.onload=function(){
+			ctx.drawImage(image,100,100,600,600,100,100,400,400);
+		}
+						//2.3.截取的位置，4，5，截取的宽高，6.7，截取完成所放的位置，8。9是截取图片后所展示的大小，（宽度和长度） 
+	</script>
+</html>

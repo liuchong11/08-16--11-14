@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+<script>
+var a = new Array ("1","2","3","4","3","6");
+
+a.splice(2,0,"9");
+
+document.write(a+"<br/>");
+
+
+
+
+
+
+
+
+
+</script>
+</html>

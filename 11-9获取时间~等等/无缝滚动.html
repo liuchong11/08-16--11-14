@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.rolling{
+				width: 800px;
+				height: 130px;
+				border: 10px solid #ccc;
+				margin: 100px auto;
+				position: relative;
+				overflow: hidden;
+			}
+			.rolling:hover{
+				animation-play-state: paused;
+			}
+			.m_unit{
+				width: 3000px;
+				height: 130px;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				animation: run 2s linear 0s infinite;
+			}
+			.m_unit li{
+				float: left;
+				margin-left: 10px;
+			}
+			.m_unit ul{
+				list-style: none;
+			}
+			
+			@-webkit-keyframes run{
+				from{left: 0px;}
+				to{left: -1050px;}
+			}
+		</style>
+	</head>
+	<body>
+<!--		div.rolling#rolling>div.m_unit#m_unit>ul>li*4>a>img[src=img/$.png]-->
+		<div class="rolling" id="rolling">
+			<div class="m_unit" id="m_unit">
+				<ul>
+					<li><a href=""><img src="img/0.png" alt="" /></a></li>
+					<li><a href=""><img src="img/1.png" alt="" /></a></li>
+					<li><a href=""><img src="img/2.png" alt="" /></a></li>
+					<li><a href=""><img src="img/3.png" alt="" /></a></li>
+					<li><a href=""><img src="img/4.png" alt="" /></a></li>
+					<li><a href=""><img src="img/0.png" alt="" /></a></li>
+					<li><a href=""><img src="img/1.png" alt="" /></a></li>
+					<li><a href=""><img src="img/2.png" alt="" /></a></li>
+					<li><a href=""><img src="img/3.png" alt="" /></a></li>
+					<li><a href=""><img src="img/4.png" alt="" /></a></li>
+				</ul>
+			</div>
+		</div>
+		
+	</body>
+</html>
+	

@@ -1,0 +1,18 @@
+div{
+		color:red;
+		}
+		p{
+			font-size:50px;
+		}
+		#p3{
+		font-size:50px;
+		color:green;
+		}
+		.p2{
+		width:1000px;
+		height:150px;
+		background-color:yellow;
+		}
+
+
+	

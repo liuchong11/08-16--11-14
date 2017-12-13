@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+
+ </body>
+ <script>
+ function Animal(){
+this.name = "猫"
+ this.tui = "四条腿";
+ }
+
+ Animal.prototype.jiao = function(){
+ 
+ console.log("喵喵叫");
+ }
+
+function jiafeimao1(){
+this.eye = "蓝眼睛"
+}
+
+ jiafeimao1.prototype = new Animal();
+
+jiafeimao1.prototype.jiao1= function(){
+
+console.log("将笑话");
+}
+
+var jiafeimao2= new jiafeimao1();
+
+jiafeimao2.jiao();
+jiafeimao2.jiao1();
+console.log(jiafeimao2.name);
+ 
+ </script>
+</html>

@@ -1,0 +1,379 @@
+html,body{
+	height: 100%;
+	position: relative;
+}
+body{
+	background: #eee;
+	font-size: 14px;
+	color: #000;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide{
+	font-size: 18px;
+	text-align: center;
+	background: #fff;
+}
+
+/*向上箭头*/
+.up-arrow{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	bottom: 40px;
+	width: 75px;
+	z-index: 11;
+	opacity: 0.8;
+}
+.up-arrow img{
+	width: 100%;
+	animation: upArrow 1.5s infinite ease-in-out;
+}
+
+/*音乐播放样式*/
+.btn-misic-on{
+	position: absolute;
+	background: url(../images/musicBtn.png) 50% 50% no-repeat;
+	padding: 50px;
+	z-index: 9999;
+	top: 0;
+	right: 0;
+	animation: music 5s infinite linear;
+}
+.btn-misic-off{
+	background: url(../images/musicBtnOff.png) 50% 50% no-repeat;
+}
+@-webkit-keyframes music{
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+/*第一页*/
+.index-txt,
+.index-txt img:nth-child(2),
+.index-txt img:nth-child(3),
+.index-flight,
+.index-element,
+.index-cloud,
+.index-stars,
+.index-building{
+	position: absolute;
+}
+
+.index-txt, .index-flight{
+	text-align: center;
+	z-index: 9;
+}
+.index-txt{
+	width: 100%;
+	height: 250px;
+	margin: 15% 0 10%;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.index-txt img:nth-child(2){
+	left: 65px;
+}
+.index-txt img:nth-child(3){
+	top:130px;
+	right: 127px;
+}
+
+.index-flight{
+	top: 43%;
+	left: 0;
+	right: 0;
+}
+.index-element{
+	top: 120px;
+	left: 0;
+	right: 0;
+	z-index: 3;
+}
+.index-flight img,
+.index-element img{
+	animation: zoom 3s infinite linear;
+}
+
+.index-element img{
+	animation-delay: 1s;
+}
+.index-cloud{
+	top: 100px;
+	left: 0;
+	right: 0;
+	z-index: 2;
+}
+.index-cloud img{
+	animation: zoom 3s infinite linear;
+	animation-delay: 2s;
+}
+.index-stars{
+	z-index: 0;
+}
+.index-stars img{
+	animation: zoom 3s infinite linear;
+	animation-delay: 0.5s;
+}
+.index-building{
+	bottom: 0;
+}
+
+/*第二页内容*/
+.swiper-slide:nth-child(2){
+	background: #000;
+}
+.ws-bg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url('../images/wasBg.jpg') 50% 100% no-repeat;
+}
+
+.ws-line{
+	width: 100%;
+	height: 100%;
+	background: url('../images/wasStar.png') 50% 50% no-repeat;
+	position: absolute;
+	z-index: 2;
+}
+
+.xy-c{
+	position: absolute;
+	top: 35%;
+	left: 20%;
+}
+.was-txt{
+	position: relative;
+	z-index: 3;
+	
+}
+.was-it{
+	margin-bottom: 50px;
+}
+.was-farm{
+	left: 10px;
+}
+
+/*第三页*/
+.swiper-slide:nth-child(2){
+	z-index: 10;
+	background: #01172c;
+}
+.early-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.title{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+.b-build{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.block-page{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.abs{
+	position: absolute;
+}
+.last-bus{
+	position: absolute;
+	bottom: 5%;
+	left: -20px;
+}
+.bus-avatar{
+	right: 0;
+	bottom: 5%;
+}
+.where-bg{
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: #000;
+}
+.where-bg img{
+	width: 100%;
+	height: 100%;
+}
+.wall-avatar{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+/*楼顶的工程师*/
+.where-avatar{
+	z-index: 3;
+	right: 5%;
+	bottom:51%
+}
+.where-wall{
+	bottom: 0;
+	right: 0;
+	height: 60%;
+}
+.where-myteam{
+	left: 15%;
+	top: 30%;
+}
+.where-txt{
+	width: 100%;
+	bottom: 12%;
+	text-align: center;
+}
+
+/*第四页*/
+/*灯*/
+.light-btn{
+	left: 2%;
+	top: 15%;
+	z-index: 2;
+}
+/*开灯后的灯柱和背景*/
+.light-btn-on{
+	display: none;
+}
+.light-on{
+	display: none;
+	background: #1a7fdc;
+}
+
+/*暗灯背景*/
+.light-page{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+.light-off{
+	background: #302e5c;
+}
+.light-page .light-bg{
+	bottom: -2px;
+	z-index: 1;
+}
+.light-title{
+	top: 5%;
+	right: 0;
+	z-index: 3;
+}
+.light-click-guide{
+	top: 28%;
+	left: 30%;
+	z-index: 3;
+	
+}
+.light-off-wall{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+.light-flowers{
+	right: 5%;
+	bottom: -12px;
+	z-index: 2;
+}
+.light-knowyou{
+	top: 15%;
+	left: 32%;
+	z-index: 2;
+}
+/*第五页*/
+.swiper-slide:nth-child(5){
+	z-index: 2;
+	text-align: center;
+	background: url('../images/aboutBg.jpg') 0 100% no-repeat #658b0e;
+}
+.foot-avatar{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 15%;
+	width: 100%;
+	height: 100%;
+}
+.foot-ta{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 65%;
+}
+.foot-txt{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 65%;
+}
+.foot-city{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.swiper-slide:nth-child(6){
+	z-index: 2;
+	text-align: center;
+	background:url(../../11-17/cmbscence/images/runBg.jpg) 0 0 no-repeat rgb(132,117,114) ;
+}
+.run-avatar{
+	top:124px;
+	left: 62px;
+}
+.huaYan{
+	top: 715px;
+	left: 55px;
+	/*display: none;*/
+}
+.daoLu{
+	top: 715px;
+	left: 120px;
+	}
+	.swiper-slide:nth-child(7){
+	z-index: 2;
+	text-align: center;
+	background: #4add9d;
+}
+.qiuQiu{
+	top: 1px;
+	left:48px;
+}
+.qiuQiu img{
+	width: 75%;
+	height: 75%;
+}
+.chengShi{
+	width: 100%;
+	height:504px;
+}
+.ren{
+	top:132px;
+	left: 153px;
+}
+.ren img{
+	width: 50%;
+	height: 50%;
+}
+.meiYou{
+	top:752px;
+	left: 68px;
+}
+.chuShou{
+	top: 724px;
+	left: 120px;
+}

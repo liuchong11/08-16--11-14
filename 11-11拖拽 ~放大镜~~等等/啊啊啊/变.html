@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    .box{
+        width: 100px;
+      
+        height: 100px;
+        background-color: red;
+    }
+    </style>
+
+
+</head>
+<body>
+
+<div class="box"></div>
+<button>变变变</button>
+
+</body>
+<script src="jquery-3.2.1.js">
+
+</script>
+<script>
+    $("button").click(function(){
+        $("div").animate({
+            width:"400px",
+            height:"400px",
+            opacity:"0.5"
+        })
+    })
+
+
+
+</script>
+
+</html>

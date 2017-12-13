@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+ function func(a,b){
+	if(a>0){
+	return Math.pow(a,b);
+	}else{
+	
+	return"请输入正确值"
+	}
+			
+ 
+
+ 
+ 
+ }
+  document.write(func(4,2));
+ </script>
+</html>

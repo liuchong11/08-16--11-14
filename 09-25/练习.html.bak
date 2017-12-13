@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ <input type="button" id = "aaa0" value="按钮1">
+ <input type="button" id = "aaa1" value="按钮2">
+ <input type="button" id = "aaa2" value="按钮3">
+ <input type="button" id = "aaa3" value="按钮4">
+ <input type="button" id = "aaa4" value="按钮5">
+ <input type="button" id = "aaa5" value="按钮6">
+ </body>
+ <script>
+for(var i = 0; i<=5;i++){
+	
+	
+
+	
+		"aaai;.onclick=function(){
+		
+		document.write("我的天");
+		
+		}
+}
+ 
+ </script>
+</html>

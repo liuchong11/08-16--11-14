@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id=box></div>
+	</body>
+	
+	<script>
+		//var oBox = document.getElementById("box");
+		
+		//oBox.innerHTML = a;
+		function c(a){
+			document.getElementById("box").innerHTML = a;
+		}
+		
+		function aa(){
+		var oScript =  document.createElement("script");
+		oScript.src="http://localhost/tq.js"
+		document.body.appendChild(oScript);
+		}
+		setInterval(aa,1000);
+	</script>
+	
+</html>

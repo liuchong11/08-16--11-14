@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" id="num1">
+  <input type="button" value="检测" onclick="aaa()">
+  <input type="text" id="num2" value=""/>
+ </body>
+ <script>
+ /*如果今天是星期二，那么1000天后是星期几？用户输入一个天数，计算这个天数后是星期几*/
+
+var b = num1.value;
+
+ function aaa(){
+ 		
+ 
+ 		if(b%7==2){
+ 			num2.value = "星期四";
+ 		}else if(b%7==3){
+ 		
+ 			num2.value = "星期五";
+ 		
+ 		}else if(b%7==4){
+ 			num2.value = "星期六";
+ 			return ;
+ 		}else if(b%7==5){
+ 		num2.value = "星期日";
+ 			//return ;
+ 		}else if(b%7==6){
+ 			//return ;
+ 			num2.value = "星期一";
+ 		}else if(b%7==0){
+ 			//return ;
+ 			num2.value = "星期二";
+ 		}else if(b%7==1){
+ 			//return ;
+ 			num2.value = "星期三";
+ 		}
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ </script>
+</html>

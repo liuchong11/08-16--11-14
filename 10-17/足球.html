@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+		<button id= "btn">加载新闻</button>
+	</body>
+	<script>
+	var oBt = document.getElementById("btn");
+	oBt.onclick = function(){
+	var xhr = new XMLHttpRequest();//创建对象
+	//准备
+	xhr.open("GET","http://localhost:8080/ajax/football",true);
+	xhr.send();
+	xhr.onreadystatechange = function(){
+		var str  = xhr.responseText;
+		var obj = str.JSON.parse();
+	if(xhr.status==200&&xhr.readyState==4){
+		var oTable = document.createElement("table");
+		var arr = obj.Date(obj);
+		for (var i = 0; i < arr.length; i++) {
+			
+		}
+		
+	}
+		
+		
+		
+	}
+	
+	
+		
+		
+	}
+	
+	</script>
+</html>

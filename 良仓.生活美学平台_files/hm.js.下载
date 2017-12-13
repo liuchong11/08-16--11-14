@@ -1,0 +1,46 @@
+
+    (function () {
+        window._mba = {
+            dversion: '2.0',
+            site: 1,
+            scheme: 'https',
+            rid: 'b7bcd86fcf294d13bb154cb1d1afa576',
+            media_id:255,
+            interest_ids:'20',
+            subcenter_id:1,
+            bis: [],
+            ad_domains: [],
+            dt_bis: [4],
+            dt_domains:{4:"a.qnroad.com"},
+            pf_bid: 0,
+            src: 'hm.baidu.com/hm.js?98d07f03cb7d8ebfd3859548d8be5f43',
+            pid:174,
+            v: '',
+            pcid:278,
+            paid:0,
+            ref: '',
+            service_domain: '',
+            ads: {'1': '300X250', '8': '160X600', '9': '160X600', '46': '960X120'}
+        };
+        var add_script = function (js) {
+            try {
+                var a = document.createElement('script');
+                a.type = 'text/javascript';
+                a.charset = "utf8";
+                a.async = true;
+                a.src = js;
+                var s = document.getElementsByTagName('head')[0];
+                s.appendChild(a);
+            } catch (e) {
+                console.log("d3 error:", e)
+            }
+        };
+        if (window._mba.bis.length > 0 || window._mba.dt_bis.length > 0) {
+            var url = 'https://static.yellqu.com/js/d4.min.js?v20171009';
+            add_script(url);
+        }
+        if (window._mba.pf_bid > 0) {
+            var pf_js = 'https://static.yellqu.com/js/pf.min.js?v20171009';
+            add_script(pf_js);
+        }
+    })();

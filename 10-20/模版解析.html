@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+		<script src="http://www.css88.com/doc/underscore1.8.2/underscore-min.js"></script>
+		<script>
+		var str = "<li><span><%=name%></span><%=content%></li>"
+			//后台返回的JSON对象
+			var data={
+				
+				"name":"孙悟空",
+				
+				"content":"花果山水帘洞美猴王"
+				
+			}
+			//将模版字符串编译成1个函数f
+			var f =_.template(str)
+			//利用函数f将json对象，转换成字符串
+			
+			
+			console.log(f(data));
+			
+			
+		</script>
+</html>

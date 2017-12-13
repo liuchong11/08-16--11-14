@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			
+			div {
+				width: 50px;
+				height: 50px;
+				background: red;
+				
+				/* 圆球*/
+				border-radius: 50%;
+				
+				position: absolute;
+				left: 300px;
+				top: 200px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="box"></div>
+		<div id="box1"></div>
+		<div id="box2"></div>
+		<div id="box3"></div>
+		<div id="box4"></div>
+		
+		
+	</body>
+	<script type="text/javascript">
+	function zh(a){
+		return Math.PI*a/180;
+	}
+		
+	var r =100;
+	var d =0;
+	
+	var oBox = document.getElementById("box");
+	var oBox1 = document.getElementById("box1");
+	var oBox2 = document.getElementById("box2");
+	var oBox3 = document.getElementById("box3");
+	setInterval(function(){
+		var x = r*Math.cos(zh(d))+300;
+		var y = r*Math.sin(zh(d))+200;
+		oBox.style.left=x+"px";
+		oBox.style.top=y+"px";
+		d+=10;
+	},500);
+	var c = 200;
+	setInterval(function(){
+	var x = c*Math.cos(zh(d))+300;
+		var y = c*Math.sin(zh(d))+200;
+		oBox1.style.left=x+"px";
+		oBox1.style.top=y+"px";
+		d+=10;
+	},100);
+	var e = 220;
+	setInterval(function(){
+	var x = e*Math.cos(zh(d))+300;
+		var y = e*Math.sin(zh(d))+200;
+		oBox2.style.left=x+"px";
+		oBox2.style.top=y+"px";
+		d+=10;
+	},200)
+		
+		
+	</script>
+		
+
+
+</html>

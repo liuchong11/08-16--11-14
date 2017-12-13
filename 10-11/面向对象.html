@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+<script>
+
+function Person()
+{
+
+this.heigth=100
+this.age=100
+this.play = function(){
+
+console.log("玩游戏")
+}
+}
+//创建对象时，可以传递参数，与函数调用的规则是一样的，一一对应
+var Jobs = new Person();
+Jobs.play()
+
+/*
+function Cat(a,b){
+this.name=a,
+this.fur =b;
+this.eat=function(){
+
+console.log("fish");
+}
+this.miaow=function(){
+
+console.log("miaow");
+}
+}
+
+var Mao = new Cat("黑猫","黑色");
+var Mao1 = new Cat("黄猫","黄色");
+
+console.log(Mao.name,Mao.fur)
+Mao.eat();
+Mao.miaow();
+console.log(Mao.name,Mao1.fur)
+Mao1.eat();
+Mao1.miaow();
+*/
+</script>
+</html>

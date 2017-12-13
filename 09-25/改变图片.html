@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <img di="pic1" src="images/1.jpg"/>
+ </body>
+ <script>
+
+ var oImg=document.getElementById("pic1");
+ //	oImg.src  代表oImg	对象中的scr 属性值，也就是 img src="其中的值"
+ //dom 节点其中的属性  其实就是  HTML 节点元素的属性
+
+ // console.log(oImg.src)；
+ //可以修改Dom 对象，来改变HTML元素 中的属性值
+
+ //eg: 下面修改的img其中的图片
+
+ oImg.src = oImg.src.replace(oImg.src,"images/2.jog")
+
+ //不可以替换
+	oImg.src = "images/1.jog";
+ //如果 可以 必需赋值
+
+
+
+ 
+ 
+ 
+ </script>
+</html>

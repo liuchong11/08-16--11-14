@@ -1,0 +1,43 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.kuang{
+	width: 650px;
+	height: 710px;
+	/*background-color: aquamarine;*/
+	margin: 0 auto;
+}
+.kuang1{
+	width: 650px;
+	height: 53px;
+	/*background-color: yellow;*/
+	text-align: center;
+	line-height: 49px;
+	
+	
+}
+.kuang2{
+	width: 623px;
+	height: 126px;
+	margin-top: 6px;
+	/*background-image: url(../img/u=4160746197,2742793286&fm=15&gp=0.jpg);*/
+}
+.kuang3{
+	margin-top: 8px;
+}
+.kuang4{
+	width: 623px;
+	/*height: 463px;*/
+	margin-top: 6px;
+	/*background-image: url(../img/u=4160746197,2742793286&fm=15&gp=0.jpg);*/
+	
+}
+.juli{
+	margin-bottom: 19px;
+}
+.aa{
+	margin-top: 178px;
+	margin-left: -393px;
+
+

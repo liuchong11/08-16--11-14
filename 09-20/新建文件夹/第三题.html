@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+<script>
+/*编写函数rev(char) 实现将字符串char倒置 比如rev("spring") 返回"gnirps"
+	
+function rev(char){
+	chars=" ";
+		for(var i = 1;i<=char.length;i++){
+			chars+= char.charAt(char.length-i);
+		}
+				document.write(char+"<br/>"+chars);
+}
+rev("spring")
+
+*/
+
+
+
+function func(char){
+			var sum="";
+		for(var i =char.length;i>=0;i--){
+			sum=sum+char[i];
+		}
+			document.write(sum);
+	}
+func("spring");
+</script>
+</html>

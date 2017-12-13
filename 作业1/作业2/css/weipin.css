@@ -1,0 +1,212 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	background-color: #FCFAFD;
+}
+.kuang{
+	width: 1000px;
+	height: 52px;
+	
+	margin: 0 auto;
+	margin-top: 30px;
+	/*background-color: lawngreen;*/
+	/*background-position-x: 0px;
+	background-position-y: 0px;
+	*/
+	/*background-image: url(../img/sprite.png)*/
+}
+.kuang1{
+	width: 313px;
+	height: 53px;
+	/*background-color: red;*/
+	background-position-x: 0px;
+	background-position-y: 0px;
+	background-image: url(../img/sprite.png);
+	float: left;
+}
+.kuang2{
+	width: 445px;
+	height: 28px;
+	/*background-color: yellow;*/
+	background-position-x: -317px;
+	background-position-y: 0px;
+	background-image: url(../img/sprite.png);
+	float: right;
+	margin-top: 12px;
+}
+.kuang3{
+	width: 1000px;
+	height: 600px;
+	/*background-color: yellow;*/
+	background-image: url(../img/57b4bd15bcc545b8b967d1df86589b99.jpg);
+	background-position-x: ;
+	background-position-y: ;
+	margin: 0 auto;
+	margin-top: 46px;
+}
+.kuang4{
+	width: 374px;
+	height: 448px;
+	/*background-color: lawngreen;*/
+	float: right;
+	}
+	.ziti{
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 15px;
+	}
+	.tutu input{
+		width: 250px;
+		height: 30px;
+		background-color: "微软雅黑";
+	font-size: 20px;
+	color:#999999;
+	margin-top: 20px;
+	/*border-style: none;*/
+	/*margin: auto;*/
+	border-style:none;
+	border-radius: 3px;
+	
+	
+	border-image: initial;
+	border: 2px solid #848484;
+		padding: 2px 12px;
+		
+	}
+	.tutu1 input{
+		
+		width: 250px;
+		height: 30px;
+		background-color: "微软雅黑";
+	font-size: 20px;
+	color:#999999;
+	margin-top: 25px;
+	/*margin: auto;*/
+	border: 2px solid #848484;
+	line-height: 2px;
+	font-size: 20px;
+	padding: 2px 12px;
+	border-radius: 3px;
+	
+	}
+#denglu{
+		/*width: 140px;*/
+		/*height: 40px;*/
+		/*background-color: #F10180;*/
+		margin-top: 27px;
+		/*border-radius: 10px 10px 10px 10px;*/
+		/*text-decoration: none;*/
+		width: 125px;
+height: 40px;
+background-color: deeppink;
+font-family: "微软雅黑";
+font-size: 20px;
+color: white;
+margin-bottom: 20px;
+	
+	}
+	.zit1{
+			font-size: 12px;
+	color: darkgray;
+	margin-bottom: 20px;
+}
+.hezuo{
+	line-height: 12px;
+    color: #666;
+    font-size: 14px;
+	margin-top: 60px;
+	margin-bottom: 8px;
+}
+.hezi{
+	width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-290px ;
+	background-position-y: -57px;
+}
+.hezi:hover{
+	width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-263px ;
+	background-position-y: -57px;
+}
+.hezi1{
+	width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-234px ;
+	background-position-y: -57px;
+	margin-top: -24px;
+	margin-left: 33px;
+	}
+	.hezi1:hover{
+		width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-346px ;
+	background-position-y: -57px;
+	margin-top: -24px;
+	margin-left: 33px;
+	}
+	.hezi2{
+		width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-179px ;
+	background-position-y: -57px;
+	margin-top: -24px;
+	margin-left: 68px;
+	}
+	.hezi2:hover{
+				width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-151px ;
+	background-position-y:-57px;
+	margin-top: -24px;
+	margin-left: 68px;
+	}
+	.hezi3{
+			width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-207px ;
+	background-position-y: -57px;
+	margin-top: -24px;
+	margin-left: 101px;
+	}
+	.hezi3:hover{
+				width: 24px;
+	height: 24px;
+	background-color: yellow;
+	background-image: url(../img/sprite.png);
+	background-position-x:-319px ;
+	background-position-y: -57px;
+	margin-top: -24px;
+	margin-left: 101px;
+	}
+	.duo{width: 250px;
+	height: 24px;
+	
+	
+}
+.geng{
+	margin-left: 130px;
+	margin-top: -22px;
+	font-size: 12px;
+}
+.zuihou{
+	margin-top: 216px;
+	margin-left: -475px;
+	font-size: 12px;
+}
+
+	

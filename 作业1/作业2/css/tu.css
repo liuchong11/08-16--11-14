@@ -1,0 +1,21 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.tutu{
+	width: 960px;
+	height: 324px;
+	/*background-color: yellow;*/
+	/*background-image: url(../img/2.png)*/
+	margin: 0 auto;
+	border-radius: 14px 14px 14px 14px;
+	animation: 9s bian infinite linear;
+	
+}
+@-webkit-keyframes bian{
+	0%{background-image: url(../img/1.png)}
+	25%{background-image: url(../img/2.png)}
+	50%{background-image: url(../img/3.png)}
+	75%{background-image: url(../img/4.png)}
+	100%{background-image:url(../img/1.png)}
+}

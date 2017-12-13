@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width:500px;
+            height:500px;
+            margin: 0 auto;
+            background-color: red;
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+</body>
+<script>
+    var box;
+    var zwidth=500;
+    var lie =2;
+    var cmargin=2;
+    var colorA;
+    var cwidth =(zwidth-lie*(lie+1)*cmargin)/lie;
+    var x = parseInt(Math.random()*lie*lie);
+var a = document.get
+    function game(){
+            box = document.createElement("div");
+            box.className="box1";
+        document.body.appendChild(box);
+        for (i=0;i<lie*lie;i++){
+            colorV();
+            if (i==x){
+                    colorA.style.backgroundColor="green";
+                colorA.onclick=function(){
+                        lie=lie+1;
+                    document.body.removeChild(box);
+                            game();
+                }
+            }
+        }
+    }
+    game();
+    function colorV(){
+                colorA=document.createElement("div");
+                colorA.style.width = cwidth+"px";
+                colorA.style.height=cwidth+"px";
+                colorA.style.backgroundColor="yellow";
+                colorA.style.marginLeft=cmargin+"px";
+                colorA.style.marginTop=cmargin+"px";
+                colorA.style.float="left";
+                    box.appendChild(colorA);
+    }
+</script>
+</html>

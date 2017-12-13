@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+
+
+
+	function aaa(b){
+		if(b==1||b==0){
+		
+		return 1;
+		
+		}
+		
+		return aaa(b-1)*b;
+		
+		
+		}
+ 
+ function aaa(c){
+		if(c==1||c==0){
+		
+		return 1;
+		
+		}
+		
+		return aaa(c-1)*c;
+		
+		
+		}
+
+
+
+function aaa(d){
+if(d==1||d==0){
+
+return 1;
+
+}
+
+return aaa(d-1)*d;
+
+
+}
+	for(var a =100;a<=999;a++){
+	var b=parseInt(a/100);
+	var c=parseInt(a/10)%10;
+	var d=a%10;
+		
+if(aaa(b)+aaa(c)+aaa(d)==a){
+		
+		document.write(a+"<br>");
+		
+		
+		}
+}
+ 
+ </script>
+</html>

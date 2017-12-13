@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  	div {
+		width: 100px;
+		height: 100px;
+		background: black;
+		filter:alpha(opacity=30);
+	}
+
+  </style>
+ </head>
+ <body>
+  <div style="opacity: 0.1;width:100px" id="div1">
+  </div>
+ </body>
+<script src="1.js"></script>
+</html>
+ 
+
+  

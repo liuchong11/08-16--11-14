@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+	var a =parseInt(89);
+	var b=parseInt(24);
+
+
+	document.write("共工作了："+a/b+"天"+a%b+"小时");
+ 
+ 
+ 
+ 
+ 
+ </script>
+</html>

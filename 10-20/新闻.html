@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<button id="btn">开始新闻</button>
+		<table>
+			<tr> 
+			<td>标题</td>
+			<td>时间</td>
+		</tr>
+		<tbody id="tb"></tbody>
+		</table>
+		
+	</body>
+	<script src="http://www.css88.com/doc/underscore1.8.2/underscore-min.js"></script>
+	<script src="js/ajax-5.0.js"></script>
+	<script>
+			var oBtn = document.getElementById("btn");
+			var oTb = document.getElementById("tb");
+			console.log(oTb)
+			oBtn.onclick = function(){
+				
+				ajax.get({
+					url:"http://localhost:8080/ajax/news",
+					success:function(str){
+						
+						var obj = JSON.parse(str);
+						var arr = obj.data;
+						
+						var str =  "<tr><td><%=title%></td><td><%=time%></td></tr>"
+						
+						var f = _.template(str);
+						
+						var html = "";
+						
+						for (var i = 0; i < arr.length; i++) {
+							
+							html+=f(arr[i]);
+							
+						}
+						
+						oTb.innerHTML=html;
+					},
+				})
+				
+				
+			}
+		
+	</script>
+</html>

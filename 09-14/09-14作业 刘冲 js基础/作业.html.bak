@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script src="1.js">
+  
+  
+  
+  </script>
+ </head>
+ <body>
+ <input type="texe" id="num1">+
+ <input type="texe" id="num2">
+ <input type="button" value="计算" onclick="aaa()">
+  
+ </body>
+ <script>
+ document.write("我的天");
+ document.write("<br/>");
+  document.write("我的天啊");
+ document.write("<h3>我的天啊要疯了</h3>");
+ document.write("&lt;h&gt;");
+//
+/*
+d
+d
+d
+d
+d
+d
+d
+*/
+var a=5;
+var b="孰能生巧";
+document.write(a);
+ document.write(b);
+ var c=("1+1=2");
+document.write(c);
+//var a =0;
+//var b =5;
+//var a,b,
+//var a=0, b=5;
+// document.write(a);
+var a =5;
+var b =2;
+document.write(a+b);
+document.write(a-b);
+document.write(a*b);
+document.write(a/b);
+document.write(a%b);
+function aaa(){
+var i=Number(num1.value);
+var o=Number(num2.value); 
+var c=i+o;
+	c=c.toFixed(2);
+	document.write(c);
+}
+
+var u=2;
+var p=3;
+document.write(Math.pow(u,p));
+
+
+
+ 
+ 
+ </script>
+</html>

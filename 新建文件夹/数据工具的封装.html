@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	
+	<script>
+	
+	var a = zhuanhuan({
+		type:"send",
+		sender:"jack",
+		mag:"123"
+		
+	});
+	
+		function zhuanhuan(obj){
+			var str = "";
+		for(var i in obj){
+		
+				str+=i;
+				str+="=";
+				str+=obj[i];
+				str+="&";
+		}
+		
+		str=str.substr(0,str.length-1);
+		return str;
+	}	
+		console.log(a);
+		
+		
+	</script>
+</html>

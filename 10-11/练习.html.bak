@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+ 
+  <script>
+  
+  /*
+   function Person(a,b){
+  this.height=a;
+  this.age = b;
+  
+  this.eat = function(){
+  
+	console.log("吃饭");
+  }
+  
+  console.log(this.height);
+  }
+var c = new Person("100","100");
+console.log("height"+c.height,"age"+c.age);
+c.eat();
+
+  */
+
+ function Person(b,c)
+ {
+	this.name=b;
+	this.age =c;
+
+	this.eat = function(){
+	
+		console.log("吃好吃的");
+	
+		return "吃好吃的";
+	}
+ 
+ 
+	
+ }
+
+ var a = new Person("边江伟","21")
+ var d = a.eat()
+ console.log(a.name+"年龄:"+a.age+"岁，"+"喜欢"+a.eat());
+
+
+  
+  
+  </script>
+ </body>
+</html>

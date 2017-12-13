@@ -1,0 +1,21 @@
+/*通配符*/
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+
+
+
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+li{
+    width: 400px;
+    height: 40px;
+    background-color: yellow;
+    margin: 10px;
+}

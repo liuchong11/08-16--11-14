@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+for(var a = 100;a<=200;a++){
+	for(var i=2;i<=a-1;i++){
+		var num=0;
+		if(a%i==0){
+			num++
+		}
+	}
+	if(num>=1){
+	document.write(a+"不是质数"+"<br>");
+	}else{
+	
+	
+		document.write(a+"是质数"+"<br>");
+	}
+
+
+
+
+
+} 
+ 
+ 
+ 
+ 
+ 
+ </script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box">
+			<a href="http://www.baidu.com" id="baidu">百度</a>  
+			<a href="http://www.baidu.com" >Google</a>
+		</div>
+
+	</body>
+	<script src="../10-24/js/jquery-3.2.1.js"></script>
+	<script>
+		var oBaidu = document.getElementById("baidu");
+		
+		xyg(oBaidu).style.color = "red";
+		
+		// 【练习】 封装获取下一个元素类型的兄弟节点。  10:45对对
+		
+		// 下一个元素兄弟节点
+//		function xyg(ele) {
+//			var o = ele.nextSibling;
+//			while (o.nodeType != 1) {
+//				o = o.nextSibling;
+//			}
+//			return o;
+//		}
+function xyg(a){
+			 var o = a.nextSibling;
+			while(o.nodeType !=1){
+				o=o.nextSibling;
+				console.log(o.nodeType);
+			}
+			return o;
+	
+}
+		
+		
+		
+		
+		// 兼容问题：  对于下一个节点的判断 标准不一致
+		//    思路： 1. 从当前元素，往下一个兄弟节点找
+		//          2. 找节点类型为1（元素节点）
+		//          3. 直到找到第1个元素节点终止
+		
+//		var o = oBaidu.nextSibling; // 第一个兄弟节点
+//		while (o.nodeType != 1) { // 判断是否为元素节点
+//			o = o.nextSibling;  // 继续寻找
+//		}
+//		
+//		// 循环结束， o 肯定是第一个元素类型的兄弟节点
+//		o.style.color = "red";
+//		
+
+		
+	</script>
+</html>

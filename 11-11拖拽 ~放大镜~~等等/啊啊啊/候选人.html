@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" placeholder="候选人" id="houxuanren" >
+
+<input type="button" value="登录"id="suiji" >
+<input type="button" value="登录2" id="shi2">
+<script>
+    var names = ["边江伟","王庚强","刘思义","王童童","胡丽鸽","李鹏弟","袁聪聪","刘冲","周闵延","张力","郭宝","李斌","南哲","韩鹏"]
+  var suiji=document.getElementById("suiji");
+   suiji.onclick= function (){
+        var x = Math.random()*14;
+        x = Math.floor(x);
+//        console.log(names[x]);
+// document.write(names[x]);
+
+       var ren = document.getElementById("houxuanren");
+        ren.value=names[x];
+    }
+//    setInterval(suiji,1000)
+
+    var shi2 = document.getElementById("shi2");
+    shi2.onclick=function(){
+        suiji.onclick();
+    }
+
+</script>
+
+</body>
+</html>

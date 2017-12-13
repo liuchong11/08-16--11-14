@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "uf-8"/>
+		<title></title>
+		
+		<link rel = "stylesheet"  href = "1.css"/>
+		<style>
+		.p2{
+		background-color:red;
+		}
+		</style>
+	</head>
+	<body>
+	<div>
+		早上好
+	</div>
+	<p>我是一只小蜜蜂</p>
+	<p id ="p3">我是一只小蜜蜂</p>
+	<p class = "p2">我是一只小蜜蜂</p>
+
+	</body>
+
+</html>
+

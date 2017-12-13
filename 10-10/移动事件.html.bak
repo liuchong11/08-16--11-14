@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <img src="img/3.JPG"id="tu" style="position:absolute">
+ </body>
+ <script>
+ var a = document.getElementById("tu");
+//与鼠标一起移动事件
+/* window.onmousedowm=function(e){
+ 
+ a.style.left = e.clientX+"px";
+ a.style.top= e.clientY+"PX";
+ 
+ 
+ 
+ }
+ */
+
+//鼠标拖拽事件
+
+//思路：
+//1.给物体添加onmousedown(鼠标按下事件)
+//2.在事情处理函数中
+//			让物体跟随鼠标移动
+//				window 。onmousemove = 函数（处理移动事情）
+//3.鼠标抬起时，停止鼠标跟随
+//window.onmousup = funciton(){}
+
+	a.onmousedown = function(e1)
+	{	
+		//阻止浏览器默认行为
+		e1.preventDefault();
+		//点击位置在 图片中间隙长度
+		var b = e1.clientX-a.offsetLeft;
+		var c = e1.clientY-a.offsetTop;
+			//让物体跟随鼠标移动
+			window.onmousemove = function(e)
+			{
+				var x = e.clientX-b;
+				var y = e.clientY-c;
+				a.style.left = x+"px";
+				a.style.top = y+"px";
+
+			
+			}
+	
+				window.onmouseup = function()
+				{
+				
+				window.onmousemove= null;
+				}
+	
+	}
+
+ 
+ 
+ 
+ </script>
+</html>

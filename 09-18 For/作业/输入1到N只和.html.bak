@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" id="num1">
+  <input type="button" value="检测" onclick="aaa()">
+ </body>
+ <script>
+ function aaa(){
+ var b =num1.value;
+ var sum=0;
+ for(a=1;a<=b;a++){
+
+ sum=sum+a;
+ 
+ 
+ 
+ }
+ 
+ 
+ }
+ document.write(sum);
+ 
+ </script>
+</html>

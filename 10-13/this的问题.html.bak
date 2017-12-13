@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+ /*
+ function Dog(){
+//函数中有1个特殊的变量   this，系统规定，对象~~~Dog
+
+}
+Dog.prototype.eat = function(){
+console.log("吃");
+return this;
+}
+
+Dog.prototype.eat1 = function(){
+	console.log("喝");
+return this;
+}
+// 创建1条狗的对象   
+new Dog().eat()
+
+function Cat(n){
+this.name = n;
+
+this.back = function(){
+console.log("hahaha");
+}
+}
+
+
+
+
+
+//Cat.prototype.back = function(){
+//console.log("hahaha");
+//}
+
+
+
+
+function Ha (n){
+
+Cat.call(this,n);
+}
+
+
+
+var Cat1 = new Ha("小白");
+Cat1.back();
+
+
+
+function Cat(){
+
+}
+Cat.prototype.back = function(){
+
+console.log("哈哈哈");
+}
+
+var a = new Cat();
+
+function Cat1(){
+
+
+}
+Cat1.prototype = a;
+
+var b = new Cat1();
+b.back();
+*/
+
+function Cat(n)
+{
+
+		this.name=n
+}
+
+Cat.prototype.Fei=function(){
+console.log("dwadad")
+}
+
+function CatKx(n){
+		Cat.call(this,n);
+}
+	var a = new CatKx("开心猫");
+	a.Fei();
+		console.log(a.name)
+ </script>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" id="num1">
+  <input type="button" value="加密" onclick="aaa()">
+   <input type="button" value="解密" onclick="bbb()">
+ </body>
+ <script>
+
+/*
+	
+function aaa(){
+	var str2="";
+	var str=num1.value;
+	for(var i =0;i<str.length-1;i++){
+	str2+=str.charCodeAt(i)+",";
+}
+
+num1.value=str2;
+
+
+}
+function bbb(){
+	var str3="";
+	var str1=num1.value;
+var a = str1.split(",");
+
+for(var t =0;t<a.length-1;t++ ){
+		
+     str3+=String.fromCharCode(a[t]);
+}
+num1.value=str3;
+}
+*/
+
+
+
+function aaa(){
+	var sum ="";
+	var a = num1.value;
+
+		for(var i = 0;i<a.length;i++){
+			sum+=a.charCodeAt(i)+",";
+}
+num1.value=sum;
+
+
+}
+
+function bbb(){
+	var sum ="";
+	var sum2=num1.value;
+	var a=sum2.split(",");
+		for(var i = 0;i<a.length-1;i++){
+		sum += String.fromCharCode(a[i]);	
+		
+		}
+		num1.value=sum;
+}
+
+
+
+
+ </script>
+</html>

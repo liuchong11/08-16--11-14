@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="上一张" id="shang" />
+	<img  id="tu" src="images/2.jpg" alt="" />
+	<input type="button" value="下一张" id="xia" />
+
+	<script type="text/javascript">
+		//用字符串拼接法
+/*简单轮播图，老师帮你布局，自己写程序*/
+
+	var a = document.getElementById("shang");
+	var b = document.getElementById("tu");
+	var c = document.getElementById("xia");
+
+var i =0;
+a.onclick=function()
+{
+	++i;	
+	for(var d=1;d<=i;d++){
+		b.src="images/"+i+".jpg";
+			if(i==5){		
+				i=0;
+			}
+	}
+}
+
+
+	
+c.onclick=function(){	
+	if(i==0)
+	{
+	i=5;	
+	}	
+	--i;
+		for(var d=5;d>=i;d--)
+		{
+			b.src="images/"+i+".jpg";
+
+			if(i==1){					
+						i=5;
+					}
+		}
+}
+
+
+
+
+	</script>
+</body>
+</html>

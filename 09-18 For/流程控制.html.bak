@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+var a =1;
+while(a<=1){
+
+
+document.write("<img src='img/j4.jpg'>");
+a++
+
+document.write("  ");
+
+
+}
+
+
+ var i = 0;
+ while(1<=100){
+console.log(i);
+ i++;
+ }
+ 
+ 
+ 
+ </script>
+</html>

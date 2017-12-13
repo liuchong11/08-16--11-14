@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" id="num1">
+  <input type="button" value="判断" onclick="dian()">
+ </body>
+ <script>
+
+ function dian(){
+ var a = num1.value;
+ if(a%2=0){
+ document.write("此数为偶数")
+ }else{document.write("此数为奇数")}
+ 
+ 
+ }
+ 
+ 
+ </script>
+</html>

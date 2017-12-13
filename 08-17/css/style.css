@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+h1{
+    font-size: 100px;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color: red;
+    text-align: center;
+    line-height: 300px;
+
+}
+p {
+    font-size: 20px;
+    color: blue;
+    font-weight: 800;
+    text-align: center;
+}
+
+#jianjie{
+    color: yellow;
+}
+.g{
+    color: green;
+}
+.red{
+    color: red;
+}
+.s{
+    color: yellow;
+}
+.tu{
+    text-align: center;
+}

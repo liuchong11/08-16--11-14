@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+<script>
+function jc(n){
+	if(n==1){
+	
+		retuen 1;
+	
+	}
+
+
+		return jc(n-1)*n
+
+
+
+
+}
+	document.write(jc(5));
+
+
+
+
+
+
+
+</script>
+</html>

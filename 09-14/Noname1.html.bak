@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	
+  
+  
+  
+  
+  </style>
+ </head>
+ <body>
+ <input type="text"id="num1">+
+		<input type="text"id="num2">
+		<input type="button"class="box2"value="计算" onclick="aaa()">
+ </body>
+
+
+ <script>
+ var a;
+var b;
+ 		function aaa(){
+		var c=a+b;
+ 			  	a =Number(num1.value);
+ 				b =Number(num2.value); 
+ 					document.write(c);	
+						c=c.toFixed(2);
+
+					
+ 		}
+ 
+ 			
+ 
+ </script> 
+</html>

@@ -1,0 +1,41 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.kuang{
+	width: 100%;
+	height: 110px;
+	background-color: red;
+}
+.kuang2{
+	width: 1200px;
+	height: 100px;
+	background-color: lawngreen;
+	margin: 0 auto;
+	background: lawngreen url(../img/logo1.png) no-repeat 0px 0px;
+	
+	
+}
+.kuang3{width: 226px;
+	height: 100px;
+	background-color: aqua;
+	float: right;
+	/*font-size:13px ;
+	color: #F36C4D;
+    display: block;
+    text-indent: 26px;
+    line-height:  30px;*/
+    
+    font-weight: bold;
+    background:url(../img/icophone.gif) no-repeat opx 0px;
+	}
+.kuang3 a{
+	height: 33px;
+	background-color: indianred;
+	font-size:13px ;
+	color: #F36C4D;
+    display: block;
+    text-indent: 61px;
+    line-height:  33px;
+}
+	

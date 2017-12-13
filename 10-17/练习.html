@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<marquee>滚来滚去</marquee>
+		<button id="btn"> 加载人员数据 </button>
+	</body>
+	<script>
+		var oBtn = document.getElementById("btn");
+		oBtn.onclick = function(){
+			//1.创建对象
+			var xhr = new XMLHttpRequest();
+			//2.准备
+			xhr.open("GET", "http://localhost:8080/ajax/person", true);
+			//3.发送
+				xhr.send();
+			//4.获取数据
+		
+		xhr.onreadystatechange = function(){
+			var str = xhr.responseText;//先获取文本
+					var obj = JSON.parse(str);	//转换成js 对象	
+					
+			if(xhr.readyState==4&&xhr.status==200){//判断是否满足条件
+				
+					
+				var oTable = document.createElement("table");//满足的话创建表格
+				var arr = obj.data;//把对象转化成数组
+				for (var i = 0;i<arr.length;i++) {
+					var oTr = document.createElement("tr");创建行
+					var o = arr[i];//把arr里面的属性赋给o
+					for (var j in o) { //遍历 
+						var oTd = document.createElement("td");
+						oTd.innerHTML=o[j];//把o里面的属性赋给oTb
+							oTr.appendChild(oTd);
+					}
+					
+					
+					oTable.appendChild(oTr);
+				}
+				document.body.appendChild(oTable);
+			}
+			
+			
+		}
+			
+			
+			
+		}
+		
+		
+		
+	</script>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+ /*
+var a =  [
+	 {
+	 "name":"张三",
+	 "age":40
+	 },
+	 {
+	 "name":"张四",
+	 "age":45
+	 
+	 },
+	 {
+	 "name":"张五",
+	 "age":39
+	 
+	 },
+	 {
+	 "name":"张六",
+	 "age":30
+	 
+	 }
+	]
+	console.log(a[1].name);
+	*/
+	var json = '{"name":"jack"}'
+
+	var obj = JSON.parse(json);
+	console.log(obj.name);
+
+ </script>
+</html>

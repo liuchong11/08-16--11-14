@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		ul{
+			list-style: none;
+		}
+			li{
+				width: 100px;
+				height: 100px;
+				background: blueviolet;
+				float: left;
+				margin: 20px;
+				font-size: 30px;
+				color: white;
+				
+			}
+			li:hover{
+				background: red;
+			}
+			
+			hov
+		</style>
+	</head>
+	<body>
+		<audio src="mp3/1.mp3"></audio> 
+		
+		<audio src="mp3/2.mp3"></audio> 
+		
+		<audio src="mp3/3.mp3"></audio> 
+		
+		<audio src="mp3/4.mp3"></audio> 
+		
+		<audio src="mp3/5.mp3"></audio> 
+		
+		<audio src="mp3/6.mp3"></audio> 
+		
+		<audio src="mp3/7.mp3"></audio> 
+		<audio src="mp3/8.mp3"></audio> 
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ul>
+		<img src="img/mama.jpg" />
+	</body>
+	<script type="text/javascript" src="js/jquery-3.2.1.js" ></script>
+	<script>
+	$("li").mouseover(function(){
+		var i = $(this).index();
+		var a = $("audio").eq(i).get(0);
+		
+		a.load();
+		a.play();
+		
+	})
+	
+	
+	</script>
+</html>

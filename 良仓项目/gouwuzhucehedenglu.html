@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="shortcut icon" href="http://7q5ckq.com1.z0.glb.clouddn.com/static/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/1.css" />
+		<link href="css/jquery.idcode.css" type="text/css" rel="stylesheet">
+		<script src="js/jquery-3.2.1.js"></script>
+		<script src="js/jquery-1.12.3.min.js"></script>
+		<script src="js/jquery.idcode.js"></script>
+	</head>
+	<body>
+		<div class="gouWuChe"></div>
+		<div class="gouTu">
+			<div class="denglu-L">
+				<div class="denglu-Zj">登录良仓
+				<p class="guanBi" style="cursor:pointer;">x</p>
+				</div>
+				<div class="jieMian">
+					<input type="text"placeholder="用户名/邮箱/手机号" class="yonghuM"/>
+					<input type="password"placeholder="密码" class="yonghuM1"/>
+					<p class="diQiT"><input type="checkbox" class="fuXuanKuang"/><a class="ziDong">7天内自动登录</a><a class="wangJi">忘记密码？</a></p>
+				<p><input type="button" class="dianJi" value="登录"/><a class="zhuceL">注册良仓</a></p>
+				</div>
+				<div class="jieMian" >
+					<p class="diSanFang">第三方登录:</p>
+					<div class="tuBiao">
+						<div class="qqwb" onclick="location.href='/i/oauth/tqq/'"></div>
+						<div class="QQ jianXi" href="/i/oauth/qq/"></div>
+						<div class="weibo jianXi" href="/i/oauth/weibo/"></div>
+						<div class="douban jianXi" href="/i/oauth/douban/"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="zhouceGouwu">
+			<div class="gouWut">
+				<div>注册良仓<p class="guanBiC" style="cursor:pointer;"></p></div>
+			</div>
+			<div class="gouWut-one">
+				<div class="gouWut-two">
+					<p class="shouJihao-one">手机号</p>
+					<input type="text" placeholder="请输入手机号" class="zhuceSj" />
+					<p class="shouJihao-one">创建密码</p>
+					<input type="password" placeholder="6~16位字符组成，区分大小写" class="zhuceMm" />
+					<p class="tongYix"><input type="checkbox" class="fuxuan-K-one"/><a class="ziDong">同意</a><a class="tiaoKuan">良仓注册条款</a></p>
+					<p><input type="button" class="zhuce-Lc" value="注册良仓"/><a class="denglu-Lc">登录良仓</a></p>
+				</div>
+				<div class="gouWut-three">	
+					<p class="shouJihao-one">验证码</p>
+					<input type="text" id ="Txtidcode" class ="txtVerification"><span id="idcode"></span>
+					<p class="shouJihao-one">密码确认</p>
+					<input type="password" placeholder="密码确认" class="mimaQr"/>
+					<p class="diSanFang-dl">第三方登录:</p>
+					<div class="tuBiao">
+						<div class="qqwb" onclick="location.href='/i/oauth/tqq/'"></div>
+						<div class="QQ jianXi" href="/i/oauth/qq/"></div>
+						<div class="weibo jianXi" href="/i/oauth/weibo/"></div>
+						<div class="douban jianXi" href="/i/oauth/douban/"></div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+	console.log($(".dianJi"));
+	$(".dianJi").click(function(){
+		var url = "http://h6.duchengjiu.top/shop/api_user.php";
+		var data={
+			status:"login",
+			username:$(".yonghuM").val(),
+			password:$(".yonghuM1").val()
+		};
+		$.post(url,data,function(obj){
+			console.log(obj)
+			if(obj.code=0){
+				alert("登录成功！");
+				
+				window.location.href="https://www.baidu.com";
+			}else{
+				alert("用户名或密码输入错误")
+			}
+		})
+	})
+	
+//购物车登录页面
+	$(".zhuceSj").change(function(){
+	var oSj = $(".zhuceSj").val();
+	var reg =/^((13[0-9])|(15[^4])|(18[0,2,3,5-9])|(17[0-8])|(147))\d{8}$/;
+		if(reg.test(oSj)==true){
+			alert("输入成功！");
+		}else{
+			alert("请输入正确的手机号!");
+			$(".zhuceSj").val("");
+		}
+	})
+			$(".zhuceMm").change(function(){
+				var oZc = $(".zhuceMm").val();
+				var myreg =/^[a-zA-Z0-9]{4,10}$/;
+				if(myreg.test(oZc)==false){
+					alert("密码不能含有非法字符，长度在4-10之间");
+					$(".zhuceMm").val("");
+				}
+			})
+	
+		$(".mimaQr").change(function(){
+		if($(".zhuceMm").val()!=$(".mimaQr").val()){
+			alert("密码不一致，请重新输入！");
+			$(".zhuceMm").val("");
+			$(".mimaQr").val("");
+		}else{
+			alert("密码输入成功");
+		}
+	})
+	
+		$.idcode.setCode();
+$("#Txtidcode").change(function(){
+	var a = $.idcode.validateCode()
+	if(a){
+		alert("验证成功");
+	}else{
+	alert("请输入正确验证码");
+	$("#Txtidcode").val("");
+	}
+});
+
+$(".zhuce-Lc").click(function(){
+	if($(".fuxuan-K-one").is(":checked")){
+
+}else{
+	alert("注册需选择同意注册条款");
+}
+var ozhuCe = document.getElementsByClassName("zhouceGouwu");
+var oGouTu  = document.getElementsByClassName("gouTu");
+var oSj = $(".zhuceSj").val();
+
+var oZc = $(".zhuceMm").val();
+var myreg =/^[a-zA-Z0-9]{4,10}$/;
+var reg =/^((13[0-9])|(15[^4])|(18[0,2,3,5-9])|(17[0-8])|(147))\d{8}$/;
+	if($.idcode.validateCode()==true){
+		if(reg.test(oSj)==true){
+			if($(".zhuceMm").val()==$(".mimaQr").val()){
+				if(myreg.test(oZc)==true){
+					if($(".fuxuan-K-one").is(":checked")){
+						var url ="http://h6.duchengjiu.top/shop/api_user.php";
+							var data = {
+									status:"register",
+									username:$(".zhuceSj").val(),
+									password:$(".zhuceMm").val()
+							}
+							$.post(url,data,function(obj){
+								alert(obj.message);
+								oGouTu[0].style.display="block";
+								ozhuCe[0].style.display="none";
+								
+							})
+					}	
+				}
+			}	
+		}
+			
+	}
+	
+	
+})
+var oguanBiC = document.getElementsByClassName("guanBiC");
+var ozhuCe = document.getElementsByClassName("zhouceGouwu");
+var oZhuceYm=document.getElementsByClassName("zhuceL");
+var oGouTu  = document.getElementsByClassName("gouTu");
+var oDlu = document.getElementsByClassName("denglu-Lc");
+
+oZhuceYm[0].onclick = function(){
+	oGouTu[0].style.display="none";
+	ozhuCe[0].style.display="block";
+}
+oDlu[0].onclick = function(){
+	oGouTu[0].style.display="block";
+	ozhuCe[0].style.display="none";
+};
+oguanBiC[0].onclick=function(){
+	ozhuCe[0].style.display="none";
+}
+var oguanBiD = document.getElementsByClassName("guanBi");
+var oDlu = document.getElementsByClassName("gouTu");
+oguanBiD[0].onclick=function(){
+	oDlu[0].style.display="none";
+}
+
+	</script>
+	
+</html>

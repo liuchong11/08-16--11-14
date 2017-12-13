@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        #miaosha{
+            width: 800px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            color: white;
+            font-size: 40px;
+            font-weight: 800;
+           text-align: left;
+            line-height: 100px;
+
+
+
+        }
+        #hezi1 {
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 28px;
+            margin-left: 450px;
+
+
+
+        }
+
+        #hezi2{
+            width: 50px;
+            height: 50px;
+            background-color:  blue;
+            text-align: center;
+            line-height: 50px;
+            margin-top: -72px;
+            margin-left: 551px;
+
+        }
+        #hezi3{
+            width: 50px;
+            height: 50px;
+            background-color:  blue;
+            text-align: center;
+            line-height: 50px;
+            margin-top: -71px;
+            margin-left: 652px;
+
+        }
+        .wo{
+            float: left;
+
+        }
+        .aa{
+            width:171px ;
+            height: 55px;
+            margin-left:-300px;
+        }
+    </style>
+</head>
+<body>
+<div id="miaosha">
+    <a class="aa">秒杀开始</a>
+    <div class="wo" id="hezi1"></div>
+    <div class="wo" id="hezi2" ></div>
+    <div class="wo" id="hezi3"></div>
+
+</div>
+<script>
+
+ setInterval( function (){
+     var miaosha = document.getElementById("miaosha");
+     var times = new Date();
+     var h =30- times.getHours();
+     var f = 35-times.getMinutes();
+     var s =59- times.getSeconds();
+     if(h<0||f<0){
+         miaosha.innerText="秒杀结束"
+     }
+     else {
+         if(h<10){h="0"+h}
+         if(f<10){f="0"+f}
+         if(s<10){s="0"+s}
+        hezi1.innerText= h;
+         hezi2.innerText= f;
+         hezi3.innerText= s;
+     }
+
+ },1000)
+
+</script>
+</body>
+</html>

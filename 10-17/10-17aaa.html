@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script> 
+		//ajax 最重要的是1个对象      
+			
+		//1、创建对象
+		//	var xhr = new XXMLHttpRequest();
+			//2、调用此对象中准备（打开）方法
+		//	xhr.open("GET","http//lo");
+		
+			xhr.onreadystatechange = function() {
+		
+		{
+			if(xhr.readyState==4)
+			{
+			console.log("2");
+			}
+		}
+		xhr.send("GET", "http://localhost:8080/ajax/ajaxtest", false);
+		
+	</script>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .view{
+                width: 500px;
+                height: 500px;
+                background-color: yellow;
+                    margin: 0 auto;
+
+
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+</body>
+<!--创建界面-->
+<script>
+    var gameView;
+    var cMargin=2;
+    var rows=2;
+    var owidth=500;
+    var colorV;
+    function game (){
+        gameView =document.createElement("div");
+            gameView.className="view";
+        document.body.appendChild(gameView);
+        var  x = parseInt(Math.random()*rows*rows);
+        for (var i=0;i<rows*rows;i++){
+            createColorVV();
+            if (i==x){
+
+                colorV.style.backgroundColor="green";
+                    colorV.onclick=function(){
+                        rows=rows+1;
+                        document.body.removeChild(gameView);
+                        game();
+                    }
+            }else{
+                colorV.onclick=function(){
+                    rows=2;
+                    document.body.removeChild(gameView);
+                    alert("游戏结束")
+                    game();
+                }
+
+            }
+
+        }
+            }
+            game();
+
+        function createColorVV(){
+          colorV=document.createElement("div");
+            var cwidth= (owidth-cMargin*(rows+1))/rows;
+            colorV.style.width=cwidth+"px";
+            colorV.style.height=cwidth+"px";
+            colorV.style.backgroundColor="red";
+            colorV.style.marginLeft=cMargin+"px";
+            colorV.style.marginTop=cMargin+"px";
+            colorV .style.float="left";
+            gameView.appendChild(colorV);
+        }
+
+
+
+</script>
+</html>

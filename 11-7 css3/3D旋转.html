@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 258px;
+				height: 258px;
+				border: 1px solid black;
+				perspective:500px;
+				
+			}
+			div img{
+				/*transform: rotatey(360deg);*/
+				backface-visibility: hidden;
+				transition: all 1s ease 0.1s;
+				position: absolute;
+			}
+			div:hover img:nth-child(1){
+				transform: rotatey(180deg);
+				/*transition: all 1s ease 0.1s;*/
+			}
+			div img:nth-child(2){
+				transform: rotatey(180deg);
+				/*transition: all 1s ease 0.1s;*/
+			}
+			div:hover img:nth-child(2){
+				transform: rotatey(360deg);
+				/*transition: all 1s ease 0.1s;*/
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div>
+			<img src="img/xiaoming.png" />
+			<img src="img/baby.png" />
+		</div>
+	</body>
+</html>

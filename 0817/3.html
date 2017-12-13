@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#font{
+				font-size: 50px;
+			}
+			/*后代选择器*/
+			.box p{
+				font-size:20px;
+			}
+			
+			.box{
+				width: 200px;
+				height: 200px;
+				background-color: red;
+
+			}
+			/*
+			 *表示通配符表示所有，一般用于清除默认
+			 * */
+			*{
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p id="font">
+				刘德华
+			</p>
+		</div>
+		
+		
+	</body>
+</html>

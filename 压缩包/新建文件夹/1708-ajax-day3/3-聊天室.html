@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		
+		<div id="room">
+			<ul id="box">
+				<li><span>[张三] </span>你好</li>
+				<li><span>[李四] </span> 你好</li>
+			</ul>
+			
+			<textarea id="msg"></textarea>
+			
+			<div>
+				<button id="btn"> 发送 </button>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+	</body>
+	<script type="text/javascript" src="js/ajax-4.0.js" ></script>
+	<script>
+		var oBtn = document.getElementById("btn");//发送按钮   发送按钮
+		
+		var oMsg = document.getElementById("msg");// 输入框 
+		
+			oBtn.onclick = function(){   //当点击的时候
+				var str = oMsg.value; // 把输入框的值定义给str
+				
+				oMsg.value="";//当点击发送的时候把输入框里的值清除，会在上面显示;
+				
+					var obj={
+						url:"http://localhost:8080/ajax/chat",
+						data:"type=send&sender=zhangsan&msg="+str,
+						success:function(str){
+							pull();
+							
+						}//定义一个对象，给js里面对应的属性赋值
+
+					}
+					ajax.get(obj);//调取ajax函数
+			}
+			
+				setInterval(pull,1000);//定义
+				function pull(){
+					var obj1= {
+						
+						url:"http://localhost:8080/ajax/chat",//服务地址
+						data:"type=query",//数据，query 说明就是获取数据
+						success:function(str){//成功时调取这里的函数
+							//console.log(str);
+							var arr = JSON.parse(str);//将字符串转换Js的数组；
+							var oUl = document.getElementById("box");
+							
+							oUl.innerHTML="";
+							
+							for (var i = 0; i < arr.length; i++) {
+								var o = arr[i];//取出下标为i的消息对象
+								
+								//创建li
+								var oLi = document.createElement("li");
+								//设置li中的内容
+								oLi.innerHTML = "<span>["+o.name+"]</span>"+o.content;
+								
+								oUl.appendChild(oLi);
+							}
+							
+									
+							
+						}
+						
+					}
+			ajax.get(obj1);
+					
+				}
+			
+	</script>
+</html>

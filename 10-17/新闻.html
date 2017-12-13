@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		
+		</style>
+		
+	</head>
+	<body>
+		<marquee>滚来滚去</marquee>
+		<p><button id="btn">新闻加载</button></p>
+		<table >
+			<tr>
+			<td>标题</td>	
+				<td>时间</td>
+			</tr>
+			
+		</table>
+	</body>
+<script>
+	var oBtn = document.getElementById("btn");
+	oBtn.onclick = function(){
+		var xhr = new XMLHttpRequest();//创建对象
+		//准备
+		xhr.open("GET"," http://localhost:8080/ajax/news",true)
+		//发送
+		xhr.send();
+		//获取
+		
+		xhr.onreadystatechange = function(){
+			if(xhr.status==200&&xhr.readyState==4){
+				var str = xhr.responseText;
+				var obj = JSON.parse(str);
+				gx(obj);
+				
+			}
+			
+		}
+		
+	}
+	function gx(obj){
+		var oTable = document.createElement("table");
+				var arr = obj.data;
+				oTable.className="aaa";
+		for (var i = 0; i < arr.length; i++) {
+			
+				
+			var oTr = document.createElement("tr");
+			var oTd = document.createElement("td");
+			oTd.innerHTML = arr[i].title;
+			var oTd1 = document.createElement("td");
+			oTd1.innerHTML = arr[i].time;
+			oTr.appendChild(oTd);
+			oTr.appendChild(oTd1);
+			oTable.appendChild(oTr);
+			document.body.appendChild(oTable);
+		}
+		
+		
+		
+		
+	}
+	
+	
+</script>
+</html>

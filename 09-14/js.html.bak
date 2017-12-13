@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <script src="Noname2.js"></script>
+ <body>
+  
+ </body>
+<script>
+ //这里是注释
+// document.write 输出内容到页面
+// 内容必须加双引或单引
+ //1. 符号必须用英文状态的；
+//2. 区分大小写的；
+//3. 一句话的最后，分号可加可不加，但是建议加上，代表这句话讲完了。
+ document.write("咸鱼还是咸鱼，即使翻了身，还是咸鱼。");
+ document.write("<br/>");
+ document.write("咸鱼也是有梦想的");
+//要在网页上，输出<h3>,怎么办？
+//    <是代表标签的，所以，需要特别处理，规定：用&lt;代替;
+//  >       &gt;
+ document.write("<br/>");
+ document.write("&lt;h3&gt");
+ 
+ </script>
+</html>
+ 

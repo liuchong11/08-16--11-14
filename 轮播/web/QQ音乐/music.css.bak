@@ -1,0 +1,649 @@
+
+	*{
+
+	margin:0px;
+	padding:0px;
+}
+
+
+	.nav{
+		width:100%;
+		height:100px;
+		/* background-color:yellow; */
+		position:relative;
+	}
+	.top{
+		width:1200px;
+		height:100px;
+		/* background-color:pink; */
+		margin:0 auto;
+		
+	}
+	.logo{
+       width:180px;
+	   height:50px;
+	   /* background-color:Aqua; */
+	   line-height:20px;
+	   position: absolute;
+       margin-top: 24px;
+	   float:left;
+		}
+
+	.logo:hover{
+	cursor:pointer;
+	}
+	.caidan{
+
+   width:440px;
+   height:100px;
+   /* background-color:Silver; */
+   margin-left:180px;
+					}
+   
+	.caidan li{
+	float:left;
+	list-style-type:none;
+	margin-left:20px;
+	margin-top:38px;
+	float:left;
+	position:relative;
+	color:black;
+	
+	}
+
+	.boxef:hover{
+		color:#31C27C;
+		cursor:pointer;
+}
+
+.boxe:hover{
+		cursor:pointer;}
+	.sousuo{
+		width:234px;
+		height:50px;
+	    /* background-color:red; */
+		margin-left:619px;
+		margin-top:-73px;
+		
+
+}
+	.sousuo_logo{
+      width:231px;
+	  height:40px;
+	  /* background-color:Fuchsia; */
+	  float:left;
+	  border:1px solid Silver;
+	  text-indent:2em;
+	
+	 outline:none;
+ 
+}
+	.boxh{
+		width:19px;
+		height:21px;
+		/* background-color:yellow; */
+		float:left;
+		margin-left:204px;
+    margin-top:-29px;
+	background-image:url("img/sousuo.png");
+	background-position-x:200px;
+    background-position-y:1321px;
+	
+}
+	.denglu{
+      width:50px;
+	  height:50px;
+	  /* background-color:pink; */
+	  float:left;
+	  margin-left:879px;
+      margin-top: -40px;
+ }
+		.denglu{
+		cursor:pointer;}
+	.kaitong_title{
+       width:136px;
+	   height:47px;
+	   background-color:#31C27C;
+	   float:left;
+	   margin-left:921px;
+	   margin-top:-61px;
+	   text-align:center;
+	   line-height:43px;
+	   color:white;
+	   font-size:14px;
+}
+	.kaitong_title:hover{
+
+		width:136px;
+	   height:47px;
+	   background-color:green;
+	   float:left;
+	   margin-left:921px;
+	   margin-top:-61px;
+	   text-align:center;
+	   line-height:43px;
+	   color:white;
+	   font-size:14px;
+	   cursor:pointer;
+}
+
+	.fufei_title{    
+
+		width:98px;
+	   height:47px;
+	   /* background-color:white; */
+	   float:left;
+	   margin-left:1059px;
+	   margin-top:-61px;
+	   text-align:center;
+	   line-height:43px;
+	   color:black;
+	   font-size:14px;
+	   border:1px solid #CCCCCC;
+
+
+}
+	.fufei_title:hover{    
+
+		width:98px;
+	   height:47px;
+	   background-color:#CCCCCC;
+	   float:left;
+	   margin-left:1059px;
+	   margin-top:-61px;
+	   text-align:center;
+	   line-height:43px;
+	   color:black;
+	   font-size:14px;
+	   cursor:pointer;
+}
+	.banner{    
+		width:100%;
+		height:622px;
+		
+		background-image:url("img/banner.jpg");
+		background-position:50%;
+		background-repeat: no-repeat;
+		background-size:cover;
+		overflow:hidden;
+		position:relative;
+    }
+
+	.text {
+				width: 1200px;
+				height: 208px;
+				/* background-color: #FF6666; */
+				margin: 0 auto;
+				position: absolute;
+				margin-top:229px;
+				margin-left: 75px;
+				animation: shang 3s;
+			}
+			
+			@-webkit-keyframes shang {
+				/* 0% {
+					transform: translateY(-10px);
+					margin-top: -1px;
+				} */
+				10% {
+					/*transform: translateY(-10px);*/
+					margin-top: -2px;
+				}
+				/* 50% {
+					transform: translateY(-10px);
+					margin-top: -5px;
+				}
+				100% {
+					margin-top: -7px;
+					transform: translateY(-100px);
+				} */
+			}
+			
+			.siren_text {
+				width: 735px;
+				height: 100px;
+				/* background-color: #FFCC00; */
+				margin-top:1px;
+				
+				margin-left: 210px;
+				text-align: center;
+				font-size: 54px;
+				color: white;
+			}
+			
+		.dengluguanli_text{
+				width: 345px;
+				height: 30px;
+				/* background-color: #FF3333; */
+				margin-top:15px;
+				margin-left:384px;
+				text-align: center;
+				font-size: 24px;
+				color: white;
+			}
+			
+			.lijidenglu_text {
+				width: 128px;
+				height: 48px;
+				background-color: #31C27C;
+				margin-top:12px;
+				margin-left:488px;
+				text-align: center;
+				font-size: 24px;
+				color: white;
+				line-height: 45px;
+				
+			}
+			.lijidenglu_text:hover{
+			cursor:pointer;
+			}
+	
+	
+	.dibu{
+	     width:1400px;
+		 height:600px;
+		 background-color:#333333;
+	}
+
+	.download{
+				width:400px;
+				height:300px;
+				/* background-color:#28FF28; */
+				float:left;
+				margin-left:80px;
+				margin-top:71px;
+	
+	}
+	.chanpin{
+				width:400px;
+				height:300px;
+				/* background-color:#FF8000; */
+				float:left;
+				margin-top:71px;
+	
+	}
+
+	.hezuolianjie{
+				width:400px;
+				height:300px;
+				/* background-color:#5CADAD; */
+				float:left;
+				margin-top:71px;
+	
+	}
+	.tubiaolist{
+				
+				width:400px;
+				height:200px;
+				/* background-color:yellow; */
+				 margin-top:32px;
+	}
+  
+	
+
+	.pc{
+	 width:50px;
+	 height:46px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:0px;
+    background-position-y:-2px;
+	float:left;
+	margin-left:40px;
+	cursor:pointer;
+	
+	}
+	.pc:hover{
+	 width:50px;
+	 height:46px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:0px;
+    background-position-y:45px;
+	float:left;
+	margin-left:40px;
+	}
+
+	.mac{
+	
+	 width:50px;
+	 height:49px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:-93px;
+    background-position-y:-2px;
+	float:left;
+	margin-left:40px;
+	cursor:pointer;
+	}
+	.mac:hover{
+	
+	 width:50px;
+	 height:49px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:-93px;
+    background-position-y:45px;
+	float:left;
+	margin-left:40px;
+	} 
+
+
+	.android{
+	width:50px;
+	 height:48px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:-180px;
+    background-position-y:0px;
+	float:left;
+	margin-left:40px;
+	cursor:pointer;
+	}
+
+	.android:hover{
+	width:50px;
+	 height:48px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:-180px;
+    background-position-y:45px;
+	float:left;
+	margin-left:40px;
+	cursor:pointer;
+	}
+
+	.iPhone{
+	 width:50px;
+	 height:46px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:-271px;
+    background-position-y:-4px;
+	float:left;
+	margin-left:40px;
+	cursor:pointer;
+	}
+
+.iPhone:hover{
+	 width:50px;
+	 height:46px;
+	 background-image:url("img/tubiao.png");
+	background-position-x:-271px;
+    background-position-y:45px;
+	float:left;
+	margin-left:40px;
+	cursor:pointer;
+	}
+	.boxa{
+	width:84px;
+	height:30px;
+	font-size:14px;
+	margin-top: 53px;
+	color:#999999;
+	cursor:pointer;
+	margin-left:3px;
+	}
+	.boxa:hover{
+	color:#31C27C;
+
+	}
+
+  .tubiaolist_b{
+   				width:400px;
+   				height:200px;
+   				/* background-color:pink; */
+   				margin-top:32px;
+   				 position:absolute;
+   				 }
+.kge{
+		width:49px;
+		height:52px;
+		background-image:url("img/tubiao.png");
+		background-position-x:-367px;
+		background-position-y:-2px;
+		float:left;
+		margin-left:74px;
+		cursor:pointer;
+	}
+	.kge:hover{
+	    width:49px;
+		height:52px;
+		background-image:url("img/tubiao.png");
+		background-position-x:-367px;
+		background-position-y:-48px;
+		float:left;
+		margin-left:74px;
+	   cursor:pointer;
+	}
+	.super{
+	   width:47px;
+	   height:52px;
+		background-image:url("img/tubiao.png");
+		background-position-x:-460px;
+		background-position-y:-2px;
+		float:left;
+		margin-left:74px;
+	    cursor:pointer;
+	
+	}
+
+	.super:hover{
+	   width:47px;
+	   height:52px;
+		background-image:url("img/tubiao.png");
+		background-position-x:-460px;
+		background-position-y:-49px;
+		float:left;
+		margin-left:74px;
+		cursor:pointer;
+	
+	}
+	.qplay{
+	
+		width:47px;
+		height:52px;
+		background-image:url("img/tubiao.png");
+		background-position-x: -563px;
+		background-position-y:-2px;
+		float:left;
+		margin-left:74px;
+		cursor:pointer;
+	}
+
+		.qplay:hover{
+		width:47px;
+		height:52px;
+		background-image:url("img/tubiao.png");
+		background-position-x: -563px;
+		background-position-y:46px;
+		float:left;
+		margin-left:74px;
+		cursor:pointer;
+	}
+	    .boxb{
+		width:100px;
+		height:30px;
+		font-size:14px;
+		margin-top: 53px;
+		color:#999999;
+		cursor:pointer;
+		margin-left:1px;
+		}
+		.boxb:hover{
+		width:100px;
+		height:30px;
+		font-size:14px;
+		margin-top: 53px;
+		color:#31C27C;
+		cursor:pointer;
+		}
+		.car{
+		width:100px;
+		height:40px;
+		/* background-color:#FFD2D2; */
+		margin-left:69px;
+	    margin-top: 84px;
+		color:#999999;
+		font-size:14px;
+		}
+		.car:hover{
+		color:#31C27C;
+		}
+		
+		
+		.show{
+		width:100px;
+		height:37px;
+		/* background-color:yellow; */
+		margin-left:195px;
+	    margin-top:-39px;
+		color:#999999;
+		font-size:14px;
+		}
+		.show:hover{
+		color:#31C27C;
+
+		}
+
+		.tubiaolist_c{
+				width:400px;
+				height:200px;
+				/* background-color:#FF00FF; */
+				 margin-top:32px;
+				 position:relative;
+		
+		}
+		.boxd{
+		float:left;
+		list-style-type:none;
+		margin-left:30px;
+		min-width: 100px;
+		margin-bottom:16px;
+		font-size:14px;
+		color:#999999;
+		}
+		.boxd:hover{
+		color:#31C27C;
+		cursor:pointer;
+	
+		}
+		
+	.dibu_kaifang{
+	      width:300px;
+		height:30px;
+		/* background-color:yellow; */
+		margin-top:59px;
+		margin-left:-797px;
+		color:#CFCFCF;
+		
+		
+	}
+	.text_b{
+	    width:500px;
+		height:69px;
+		/* background-color:pink; */
+		margin-left: -810px;
+		float:left;
+	
+	}
+	.boxe{
+		float:left;
+		list-style-type:none;
+		margin-left:20px;
+		margin-top:30px;
+		margin-bottom:16px;
+		font-size:15px;
+		color:#999999;
+		}
+	.boxe:hover{
+	color:#31C27C;
+	}
+
+	.dibu_b{
+	   width:1200px;
+	   height:73px;
+	   /* background-color:#FFE4CA; */
+		margin-left:-812px;
+		margin-top:71px;
+	
+	}
+	.dibu_b p{
+	text-align:center;
+	
+	}
+	.about{
+	color:#999999;
+	font-size:12px;
+	text-align:center;
+	}
+	.about:hover{
+	color:#31C27C;
+	cursor:pointer;
+	}
+	.bottom-a{
+	margin-left:20px;
+	}
+
+	.text_d{
+	font-size:12px;
+	color:#999999;
+	}
+	.text_e{
+	font-size:12px;
+	color:#999999;
+	
+	}
+	.text_e:hover{
+	color:#31C27C;
+	cursor:pointer;
+	}
+	.text_f{
+	font-size:12px;
+	color:#999999;
+	}
+	.box_k{
+	   width:50px;
+	   height:150px;
+	  margin-top:-344px;
+	   margin-left:1219px;
+	   border:1px solid black;
+	   position:fixed;
+	   top:800px;
+	   right:20px;
+	   
+	}
+	.box_o{
+	
+	   width:50px;
+	   height:50px;
+	   background-image:url("img/sousuo.png");
+		background-position-x:200px;
+		background-position-y:220px; 
+	
+	}
+	.box_o:hover{
+	   background-position-x:149px;
+		background-position-y:220px;
+		cursor:pointer;
+	
+	}
+
+	.box_p{
+	   width:50px;
+	   height:50px;
+	   background-image:url("img/sousuo.png");
+		background-position-x:100px;
+		background-position-y:220px;
+	}
+     .box_p:hover{
+	 background-color:#31C27C;
+	 cursor:pointer;
+	 }
+
+
+	.box_q{
+	   width:50px;
+	   height:50px;
+	   background-image:url("img/sousuo.png");
+		background-position-x:-150px;
+		background-position-y:-280px;
+	}
+	 .box_q:hover{
+	 background-color:#31C27C;
+	 cursor:pointer;
+	 }
+	

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  #box1{
+	
+	height:100px;
+	background-color:red;
+	
+  }
+  
+  
+  
+  </style>
+ </head>
+ <body>
+  <div id="box1" style="opacity:0.1;width:100px;"></div>
+ </body>
+ <script>
+ var Divs = document.getElementById("box1");
+
+Divs.onmouseover=function()
+{
+	
+	move(Divs,"width",400);
+}
+	Divs.onmouseout=function()
+	{
+		move(Divs,"opacity",60);
+		
+	}
+	 function move(obj,attr,target)
+	 {
+			 clearInterval(obj.t);
+			obj.t = setInterval(function()
+			{				
+				//初始值
+				var current = parseFloat(obj.style[attr]);
+				if (attr=="opacity")
+				{
+					current*=100;
+				}	
+				if(current==target)
+				{
+					clearInterval(obj.t)
+					return ;
+				}
+			 
+				var speed = (target>current)?10:-10
+					 current +=speed;
+					 console.log(current);
+				if (attr=="opacity")
+				{
+					obj.style[attr]=current/100;
+				}else{
+					obj.style[attr]=current+"px";
+					}
+					
+			},100)
+	}
+ 
+ 
+ 
+ </script>
+</html>

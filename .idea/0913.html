@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+
+
+        }
+        .box1{
+            width: 1000px;
+            height: 1000px;
+            background-color: red;
+            margin: 0 auto;
+
+        }
+        .box2{
+            width: 300px;
+            height: 300px;
+            background-color: blue;
+            margin: 0 auto;
+
+        }
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color:yellow;
+            margin: 0 auto;
+
+        }
+        .box4{
+            width: 100px;
+            height: 100px;
+            background-color:green;
+            margin: 0 auto;
+
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2">这是灯谜</div>
+     <div class="box3" onclick=jia()>答案</div>
+    <div class="box4" onclick=jian()>会会</div>
+</div>
+
+</body>
+<script>
+    var a=document.getElementsByClassName("box2")[0];
+    var dengmi=["问题1","问题2","问题13","问题14","问题5","问题54","问题3","问题56","问题76","问题8","问题19","问题17"];
+    var x =-1;
+    function jia(){
+        x=x+1;
+        a.innerText=dengmi[x];
+            if(x>10){
+                x=-1;
+            }else
+            alert()
+    }
+        function jian (){
+            x=x-1;
+
+            a.innerText=dengmi[x];
+
+        }
+
+
+
+
+
+
+
+</script>
+</html>

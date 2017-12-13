@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			div{
+				width: 258px;
+				height: 258px;
+				border: 1px solid black;
+				border-radius: 50%;
+				float: left;
+				margin-left: 20px;
+			}
+			div img{
+				border-radius: 50%;
+				position: absolute;
+				transition: all 1s ease 0.1s;
+			}
+			div:nth-child(1) img{
+				transform-origin:0% 10%;
+			}
+			div:nth-child(1):hover .xiaoming{
+				transform: rotateY(180deg);
+			}
+			div:nth-child(2) img{
+				transform-origin: 100% 100%;
+			}
+			div:nth-child(2):hover .xiaoming{
+				transform: rotateX(180deg);
+			}
+			div:nth-child(3) img{
+				transform-origin: 50% 0%;
+			}
+			div:nth-child(3):hover .xiaoming{
+				transform: rotateX(180deg);
+			}
+			div:nth-child(4) img{
+				transform-origin:100% 58%;
+			}
+			div:nth-child(4):hover .xiaoming{
+				transform: rotateY(180deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="img/baby.png" class="baby" />
+			<img src="img/xiaoming.png"  class="xiaoming"/>
+		</div>
+		<div>
+			<img src="img/baby.png" class="baby" />
+			<img src="img/xiaoming.png"  class="xiaoming"/>
+		</div>
+		<div>
+			<img src="img/baby.png" class="baby" />
+			<img src="img/xiaoming.png"  class="xiaoming"/>
+		</div>
+		<div>
+			<img src="img/baby.png" class="baby" />
+			<img src="img/xiaoming.png"  class="xiaoming"/>
+		</div>
+		
+	</body>
+</html>

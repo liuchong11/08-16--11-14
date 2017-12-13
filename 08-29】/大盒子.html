@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 440px;
+            overflow: hidden;
+            background-color: red;
+        }
+        #ttt{width: 100px;
+                height: 100px;
+            background-color: blue;
+            margin: 5px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+//    通过box获取id
+    var box = document.getElementById("box");
+var num =0;
+//    创建div
+    function  jianHeZi(){
+        for(var i=0;i<4;i++){
+//            num++;
+//            if(num>3){
+//                clearInterval(timer)
+//            }
+
+            box.appendChild(boxChild);
+        }
+
+    }
+    var timer= setInterval(jianHeZi,2000);
+
+</script>
+</body>
+</html>

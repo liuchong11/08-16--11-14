@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+ </body>
+ <script>
+ /*
+  Array.prototype.boomXXX=function(a){
+ this.push(a);
+ 
+ 
+ }
+var arr = [1,2,3];
+arr.boomXXX(4);
+
+console.log(arr);
+ */
+
+ Array.prototype.dz=function(){
+var a = this[0];
+var b = this[this.length-1];
+this[0]=b;
+this[this.length-1]=a;
+
+ }
+ var arr = [1,2,3,4]
+arr.dz()
+ 
+
+ console.log(arr);
+ </script>
+</html>

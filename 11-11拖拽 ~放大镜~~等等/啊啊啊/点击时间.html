@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">点击一下就消失</div>
+<input type="button" id="btn" value="点你就消失" onclick=dianj()>
+</body>
+<script>
+    var btn= document.getElementById("btn");
+    var box = document.getElementById("box");
+    var a =1;
+   function dianj(){
+        if(a){
+            box.style.display="none";
+            a=0;
+        }else {box.style.display="block";
+            a=1;
+
+        }
+    }
+
+</script>
+</html>

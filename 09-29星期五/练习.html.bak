@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ <style>
+  #box1{
+	width:100px;
+	height:100px;
+	background-color:red;
+  }
+ </style>
+ </head>
+ <body>
+	
+   <div id="box1" style="opacity:0"></div>
+ </body>
+ <script>
+ box1.onmouseover=function(){
+	
+		move(box1,1);
+	}
+	
+	box1.onmouseout=function(){
+	
+		move(box1,0);
+	}
+ var a = document.getElementById("box1");
+	
+function move(duixiang,shuzhi){
+ duixiang.t=setInterval(function(){
+	var chushi = parseFloat(a.style.opacity);
+		if(chushi==shuzhi)
+		{
+		clearInterval(duixiang.t);
+		return;
+		
+		}
+
+		var speed = (shuzhi>chushi)?0.1:-0.1;
+		chushi+=speed;
+
+		a.style.opacity=chushi;
+
+
+
+},1000);
+ }
+ </script>
+</html>

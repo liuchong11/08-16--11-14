@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div {
+				width: 192px;
+				height: 90px;
+				background: url(img/jian.png) no-repeat;
+				background-position: 0px -280px;
+				position: absolute;
+				top: 100px;
+				left: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		
+	</body>
+	<script>
+		function Boy(top, left, speed) {
+			this.top = top;
+			this.left = left;
+			this.speed = speed;
+			this.bufa = 0;
+			this.Time = null;
+			this.dom = null;
+			this.init = function() {
+				this.dom = document.createElement("div");
+				document.body.appendChild(this.dom);
+
+				this.dom.style.left = this.left + "px";
+				this.dom.style.top = this.top + "px";
+			}
+			this.xingdong = function() {
+				var self = this;
+				this.timer = setInterval(function() {
+					self.left++;
+					self.bufa++;
+					if (self.bufa > 4) {
+						self.bufa = 0;
+					}
+					if (self.left > 1000) {
+						self.die();
+					}
+					self.dom.style.left = self.left + "px";
+					self.dom.style.backgroundPosition = self.bufa * -192 + 'px -280px';
+				}, this.speed);
+			}
+			this.die = function(){
+				clearInterval(this.timer);
+				document.body.removeChild(this.dom);
+			}
+			
+			this.init();
+			
+			this.xingdong();
+
+		}
+		setInterval(function(){
+			new Boy(Math.random()*300,Math.random()*100,Math.random()*100)
+		},1000);
+	</script>
+
+</html>

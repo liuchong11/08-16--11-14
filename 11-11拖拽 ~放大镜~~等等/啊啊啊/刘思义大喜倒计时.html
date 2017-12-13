@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+
+    }
+        #miaosha{
+            width: 800px;
+            height: 100px;
+            background-color: red;
+            margin: 0 auto;
+            color: white;
+            font-size: 40px;
+            font-weight: 800;
+            text-align: center;
+            line-height: 100px;
+
+        }
+    </style>
+</head>
+<body>
+<div id="miaosha">末日倒计时</div>
+<script>
+
+    setInterval( function (){
+    var miaosha = document.getElementById("miaosha");
+    var times = new Date();
+    var h =16- times.getHours();
+    var f = 19-times.getMinutes();
+    var s =59- times.getSeconds();
+    if(h<0||f<0){
+      miaosha.innerText="大喜开始"
+    }
+    else {
+        if(h<10){h="0"+h}
+        if(f<10){f="0"+f}
+        if(s<10){s="0"+s}
+        var  t = h+":"+f+":"+s;
+        miaosha.innerText ="距离刘思义大喜倒计时还有"+t;
+    }
+
+    },1000)
+
+</script>
+</body>
+</html>

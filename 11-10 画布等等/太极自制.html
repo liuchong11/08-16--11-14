@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#canvas{
+				border: 10px solid black;
+				background: khaki;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="canvas" width="800" height="800"></canvas>
+	</body>
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		ctx.fillStyle="white";
+		ctx.beginPath();
+		ctx.arc(300,200,150,-0.5*Math.PI,0.5*Math.PI,false);
+		ctx.closePath();
+		ctx.fill();
+		
+		ctx.fillStyle="black";
+		ctx.beginPath();
+		ctx.arc(300,200,150,-0.5*Math.PI,0.5*Math.PI,true);
+		ctx.closePath();
+		ctx.fill();
+		ctx.fillStyle="black";
+		ctx.beginPath();
+		ctx.arc(300,275,75,0,2*Math.PI,true);
+		ctx.closePath();
+		ctx.fill();
+	</script>
+</html>

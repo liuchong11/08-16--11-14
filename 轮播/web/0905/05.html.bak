@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <title>Document</title>
+  <style>
+		.box1{
+				 width: 612px;
+ 4                 height: 408px;
+ 5                 font-size: 20px;
+ 6                 margin: 100px auto;
+ 7                 background: url(img/4.jpg);
+ 8                 -moz-transform: translate(100px);              
+ 9                 -webkit-transform: translate(100px);
+10                 -ms-transform: translate(100px);
+11                 -o-transform: translate(100px);
+
+				}
+		
+  
+  </style>
+ </head>
+ <body>
+  <div class="box1">1</div>
+
+ </body>
+</html>

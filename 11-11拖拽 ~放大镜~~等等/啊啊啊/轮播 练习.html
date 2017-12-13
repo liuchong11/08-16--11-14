@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 800px;
+            height: 400px;
+            /*background-color: red;*/
+            margin:0 auto;
+            /*overflow: hidden;*/
+        }
+        .tu{
+            width: 800px;
+            height: 350px;
+            display: none;
+
+
+
+        }
+        .box2{
+            width: 800px;
+            height: 50px;
+            /*background-color: blue;*/
+           margin-top: -4px;
+        }
+        .dibu{
+            width: 199px;
+            height:50px;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 1px;
+            /*padding-right: 1px;*/
+            text-align: center;
+            line-height: 50px;
+        }
+        .dibu:hover{
+            background-color: red;
+        }
+        .aaa{
+            width: 200px;
+            height:50px;
+            background-color: yellowgreen;
+            float: left;
+            margin-right: 0px;
+            text-align: center;
+            line-height: 50px;
+
+
+        }
+        .ccc{
+            display:block;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+
+    <img class="tu ccc" src="IMGA/1.jpg" alt="">
+    <img class="tu" src="IMGA/2.jpg" alt="">
+    <img class="tu" src="IMGA/3.jpg" alt="">
+    <img class="tu" src="IMGA/4.jpg" alt="">
+
+<div class="box2">
+    <div class="dibu">按一下</div>
+    <div class="dibu">按一下</div>
+    <div class="dibu">按一下</div>
+    <div class="dibu aaa" >按一下</div>
+
+
+</div>
+
+</div>
+<script>
+var a= document.getElementsByClassName("dibu");
+var b = document.getElementsByClassName("tu");
+    for (let i=0;i<4;i++){
+        a[i].onclick=function(){
+            for(var j=0;j<4;j++){
+                b[j].style.display="none";
+            }
+
+            b[i].style.display="block";
+        }
+
+
+    }
+
+</script>
+</body>
+</html>

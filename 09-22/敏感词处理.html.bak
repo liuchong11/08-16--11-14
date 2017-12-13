@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <textarea id="num1"></textarea>
+  <input type="button" value="处理" onclick="aaa()">
+   <textarea id="num2"></textarea>
+ </body>
+ <script>
+ function aaa()
+ {
+	var str1= num1.value;
+	var reg = /(nnd|你大爷的｛0，1｝|nmb)/gi;
+	num2.value=str1.replace(reg,"***");
+
+
+
+ }
+ 
+ </script>
+</html>

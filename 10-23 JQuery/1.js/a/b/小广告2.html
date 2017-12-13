@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			#btn{
+				position: fixed;
+				float: right;
+				
+			}
+		</style>
+	</head>
+	<body style="height: 10000px;">
+		<button id="btn">回到顶部</button>
+	</body>
+	<script src="../../jquery-3.2.1.js"></script>
+		<script>
+		$(document).scroll(function(){
+			var y = $(document).scrollTop();
+			if(top>200){
+				$("#div1").show();
+			}else{
+				$("#div1").hide();
+			}
+		})
+			//	$("#btn").animate({"top":0})
+			//})
+		</script>
+</html>
